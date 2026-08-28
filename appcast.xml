@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>Pysano Updates</title>
+    <link>https://github.com/kairon27/Pysano-Updates/releases</link>
+    <description>Stable and beta updates for Pysano.</description>
+    <language>uk</language>
+  </channel>
+</rss>

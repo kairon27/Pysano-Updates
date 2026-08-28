@@ -6,6 +6,23 @@
         <description>Stable and beta updates for Pysano.</description>
         <language>uk</language>
         <item>
+            <title>0.6.2</title>
+            <pubDate>Fri, 28 Aug 2026 22:17:05 +0300</pubDate>
+            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
+            <sparkle:version>11</sparkle:version>
+            <sparkle:shortVersionString>0.6.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Pysano 0.6.2
+
+- Додано focused-node fallback для ChatGPT, Codex та інших Chromium/Electron/WebKit редакторів, які повертають `AXGroup` або `AXWebArea` замість стандартного текстового AX-role.
+- Перед вставленням Pysano повторно перевіряє початковий застосунок, вікно та той самий accessibility-вузол; password і secure-контейнери залишаються заблокованими.
+- Відсутність дозволу «Доступність» більше не маскується повідомленням про невідоме текстове поле.
+- Після невдалої спроби в меню доступна санітизована діагностика фокусу без тексту поля, виділення, натиснутих клавіш або буфера обміну.
+]]></description>
+            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.6.2/Pysano-0.6.2.zip" length="11950750" type="application/octet-stream" sparkle:edSignature="hSbwaHv4Rmv0N8jIh/OJAlATU9mV0Csbn9XCAjkgElozBpBChdsY7T+1QBRytOL3eHPB8lD3kdvepGv3fvjxAg=="/>
+        </item>
+        <item>
             <title>0.6.1</title>
             <pubDate>Fri, 28 Aug 2026 21:45:44 +0300</pubDate>
             <link>https://github.com/kairon27/Pysano-Updates/releases</link>

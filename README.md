@@ -1,6 +1,6 @@
 # Pysano Updates
 
-Public distribution feed for [Pysano](https://github.com/kairon27/Pysano).
+Public binary distribution feed for Pysano.
 
 This repository contains only:
 

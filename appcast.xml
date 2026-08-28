@@ -1,9 +1,26 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
-  <channel>
-    <title>Pysano Updates</title>
-    <link>https://github.com/kairon27/Pysano-Updates/releases</link>
-    <description>Stable and beta updates for Pysano.</description>
-    <language>uk</language>
-  </channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Pysano Updates</title>
+        <link>https://github.com/kairon27/Pysano-Updates/releases</link>
+        <description>Stable and beta updates for Pysano.</description>
+        <language>uk</language>
+        <item>
+            <title>0.6.1</title>
+            <pubDate>Fri, 28 Aug 2026 21:45:44 +0300</pubDate>
+            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
+            <sparkle:version>10</sparkle:version>
+            <sparkle:shortVersionString>0.6.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Pysano 0.6.1
+
+- Виправлено регресію, через яку Pysano іноді не знаходила активне поле в ChatGPT, Codex, Electron/WebKit і вікнах на іншому моніторі.
+- Відновлено надійне визначення поля через frontmost application.
+- System-wide accessibility focus тепер використовується лише як same-process fallback.
+- Посилено захист полів паролів у fallback-пошуку.
+]]></description>
+            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.6.1/Pysano-0.6.1.zip" length="11948223" type="application/octet-stream" sparkle:edSignature="ATR9bwNmGVxKD4UPNu6rjFCouER0kRD09AswJmc7v7/ZbhyVankKF6iAE+cWZPyd0hBBA6Mp8EAQ2rsexaDXAg=="/>
+        </item>
+    </channel>
 </rss>

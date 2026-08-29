@@ -6,6 +6,25 @@
         <description>Stable and beta updates for Pysano.</description>
         <language>en</language>
         <item>
+            <title>0.8.0-beta.2</title>
+            <pubDate>Sat, 29 Aug 2026 21:49:54 +0300</pubDate>
+            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
+            <sparkle:channel>beta</sparkle:channel>
+            <sparkle:version>15</sparkle:version>
+            <sparkle:shortVersionString>0.8.0-beta.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0 Beta 2
+
+- Added Russian, French, and Italian transcription-language choices for Gemini Standard, Gemini Live, Whisper, and Parakeet.
+- Added a complete Italian interface localization, including the macOS microphone permission description.
+- Interface language changes now apply after relaunch so SwiftUI views, AppKit menus, overlays, and status messages never mix languages in one session.
+- Added a localized restart prompt with **Restart now** and **Later** actions after changing the interface language.
+- Improved local signing reliability by resolving the existing compatibility certificate by fingerprint without changing Keychain trust or the app's designated requirement.
+]]></description>
+            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.2/Pysano-0.8.0-beta.2.zip" length="12109408" type="application/octet-stream" sparkle:edSignature="7UBpW1RbKeoeH/dPC03y43isaPXtKVMNLbQmwzZKxHteLxBpvb3av+V6+B7gVS7AcXxEzgC5DhSfnR/a+gapBw=="/>
+        </item>
+        <item>
             <title>0.8.0-beta.1</title>
             <pubDate>Sat, 29 Aug 2026 18:42:43 +0300</pubDate>
             <link>https://github.com/kairon27/Pysano-Updates/releases</link>

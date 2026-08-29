@@ -6,6 +6,23 @@
         <description>Stable and beta updates for Pysano.</description>
         <language>uk</language>
         <item>
+            <title>0.7.1</title>
+            <pubDate>Sat, 29 Aug 2026 11:36:26 +0300</pubDate>
+            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
+            <sparkle:version>13</sparkle:version>
+            <sparkle:shortVersionString>0.7.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Pysano 0.7.1
+
+- Кнопка «Виправити доступ до ключа» тепер одноразово перебудовує ACL старого Keychain-запису для сталого підпису Pysano, щоб наступні запуски не просили розблокування.
+- API key залишається в Keychain; автоматичних системних діалогів і збереження ключа у файлах немає.
+- Додано чотири набори звукового відгуку: Liquid, М’який дзвін, Імпульс і Системний macOS.
+- Liquid став типовим коротким сигналом. У налаштуваннях кожен варіант можна прослухати без запуску запису або повністю вимкнути звуки.
+]]></description>
+            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.7.1/Pysano-0.7.1.zip" length="11984588" type="application/octet-stream" sparkle:edSignature="Va5xF1eJSx87ac1uuS+Tu1TL+fJmpYfv4ZBSKsc9BBRtQ7u/7yVnPvwlcxqiAAYn2ni9GCh7TcPD9fqGuTmzAQ=="/>
+        </item>
+        <item>
             <title>0.7.0</title>
             <pubDate>Sat, 29 Aug 2026 11:18:46 +0300</pubDate>
             <link>https://github.com/kairon27/Pysano-Updates/releases</link>
@@ -38,23 +55,6 @@
 - Після невдалої спроби в меню доступна санітизована діагностика фокусу без тексту поля, виділення, натиснутих клавіш або буфера обміну.
 ]]></description>
             <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.6.2/Pysano-0.6.2.zip" length="11950750" type="application/octet-stream" sparkle:edSignature="hSbwaHv4Rmv0N8jIh/OJAlATU9mV0Csbn9XCAjkgElozBpBChdsY7T+1QBRytOL3eHPB8lD3kdvepGv3fvjxAg=="/>
-        </item>
-        <item>
-            <title>0.6.1</title>
-            <pubDate>Fri, 28 Aug 2026 21:45:44 +0300</pubDate>
-            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
-            <sparkle:version>10</sparkle:version>
-            <sparkle:shortVersionString>0.6.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Pysano 0.6.1
-
-- Виправлено регресію, через яку Pysano іноді не знаходила активне поле в ChatGPT, Codex, Electron/WebKit і вікнах на іншому моніторі.
-- Відновлено надійне визначення поля через frontmost application.
-- System-wide accessibility focus тепер використовується лише як same-process fallback.
-- Посилено захист полів паролів у fallback-пошуку.
-]]></description>
-            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.6.1/Pysano-0.6.1.zip" length="11948223" type="application/octet-stream" sparkle:edSignature="ATR9bwNmGVxKD4UPNu6rjFCouER0kRD09AswJmc7v7/ZbhyVankKF6iAE+cWZPyd0hBBA6Mp8EAQ2rsexaDXAg=="/>
         </item>
     </channel>
 </rss>

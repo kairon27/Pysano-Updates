@@ -6,6 +6,26 @@
         <description>Stable and beta updates for Pysano.</description>
         <language>en</language>
         <item>
+            <title>0.8.0-beta.1</title>
+            <pubDate>Sat, 29 Aug 2026 18:42:43 +0300</pubDate>
+            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
+            <sparkle:channel>beta</sparkle:channel>
+            <sparkle:version>14</sparkle:version>
+            <sparkle:shortVersionString>0.8.0-beta.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0 Beta 1
+
+- Added an in-app interface language selector with Ukrainian, English, and French. The interface changes immediately and the choice persists between launches.
+- Localized settings, menu-bar actions, status messages, dictation indicators, permissions, errors, model management, Keychain guidance, and update controls.
+- Added localized microphone permission descriptions for macOS.
+- Introduced a protected two-branch release workflow: `main` publishes Stable builds and `beta` publishes Beta builds.
+- Added release-script checks that prevent Stable and Beta packages from being prepared or pushed from the wrong branch.
+- Standardized source comments, documentation, release notes, and new commit messages in English.
+]]></description>
+            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.1/Pysano-0.8.0-beta.1.zip" length="12077560" type="application/octet-stream" sparkle:edSignature="ddXVDqzCoLzvtaX8uzwrBZpgXb39bJc4R4XktwZpqcGtR4nHMhaIyavtpExQoCGCvhnkNGuoOorNY+K8I4qqBg=="/>
+        </item>
+        <item>
             <title>0.7.1</title>
             <pubDate>Sat, 29 Aug 2026 11:36:26 +0300</pubDate>
             <link>https://github.com/kairon27/Pysano-Updates/releases</link>

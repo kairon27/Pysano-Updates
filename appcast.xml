@@ -6,6 +6,23 @@
         <description>Stable and beta updates for Pysano.</description>
         <language>uk</language>
         <item>
+            <title>0.7.0</title>
+            <pubDate>Sat, 29 Aug 2026 11:18:46 +0300</pubDate>
+            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
+            <sparkle:version>12</sparkle:version>
+            <sparkle:shortVersionString>0.7.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Pysano 0.7.0
+
+- Індикатор став компактнішим і за замовчуванням з’являється зверху, не перекриваючи поле введення.
+- Додано вибір позиції: зверху, знизу, ліворуч або праворуч.
+- Фінальне повідомлення можна приховати або показувати 0,5 / 1 / 2 / 4 секунди; типове значення — 1 секунда.
+- Додано нативні звуки macOS на початку й після завершення запису з окремим перемикачем.
+]]></description>
+            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.7.0/Pysano-0.7.0.zip" length="11971563" type="application/octet-stream" sparkle:edSignature="0/wmKCqcYxT5mtMYgUMfWkek19FWaGMSBRTkhpuwSIf/uWoJNCEP9V1OGIPgmky4G8u1gi5EschWBfYYhXQXBg=="/>
+        </item>
+        <item>
             <title>0.6.2</title>
             <pubDate>Fri, 28 Aug 2026 22:17:05 +0300</pubDate>
             <link>https://github.com/kairon27/Pysano-Updates/releases</link>

@@ -4,7 +4,7 @@
         <title>Pysano Updates</title>
         <link>https://github.com/kairon27/Pysano-Updates/releases</link>
         <description>Stable and beta updates for Pysano.</description>
-        <language>uk</language>
+        <language>en</language>
         <item>
             <title>0.7.1</title>
             <pubDate>Sat, 29 Aug 2026 11:36:26 +0300</pubDate>
@@ -15,10 +15,10 @@
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description sparkle:format="markdown"><![CDATA[# Pysano 0.7.1
 
-- Кнопка «Виправити доступ до ключа» тепер одноразово перебудовує ACL старого Keychain-запису для сталого підпису Pysano, щоб наступні запуски не просили розблокування.
-- API key залишається в Keychain; автоматичних системних діалогів і збереження ключа у файлах немає.
-- Додано чотири набори звукового відгуку: Liquid, М’який дзвін, Імпульс і Системний macOS.
-- Liquid став типовим коротким сигналом. У налаштуваннях кожен варіант можна прослухати без запуску запису або повністю вимкнути звуки.
+- The **Repair Key Access** action now rebuilds the legacy Keychain item's ACL once for Pysano's stable code signature, preventing an unlock prompt on every launch.
+- The API key remains in Keychain; there are no automatic system prompts and the key is never saved to project files.
+- Added four feedback sound sets: Liquid, Soft Chime, Pulse, and macOS System.
+- Liquid is the new default short cue. Every option can be previewed in Settings without starting a recording, and sound feedback can still be disabled completely.
 ]]></description>
             <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.7.1/Pysano-0.7.1.zip" length="11984588" type="application/octet-stream" sparkle:edSignature="Va5xF1eJSx87ac1uuS+Tu1TL+fJmpYfv4ZBSKsc9BBRtQ7u/7yVnPvwlcxqiAAYn2ni9GCh7TcPD9fqGuTmzAQ=="/>
         </item>
@@ -32,10 +32,10 @@
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description sparkle:format="markdown"><![CDATA[# Pysano 0.7.0
 
-- Індикатор став компактнішим і за замовчуванням з’являється зверху, не перекриваючи поле введення.
-- Додано вибір позиції: зверху, знизу, ліворуч або праворуч.
-- Фінальне повідомлення можна приховати або показувати 0,5 / 1 / 2 / 4 секунди; типове значення — 1 секунда.
-- Додано нативні звуки macOS на початку й після завершення запису з окремим перемикачем.
+- Made the dictation indicator smaller and moved its default position to the top so it does not cover the input field.
+- Added top, bottom, left, and right indicator placement options.
+- The completion message can be hidden or displayed for 0.5, 1, 2, or 4 seconds; the default is 1 second.
+- Added native macOS sounds at recording start and completion, with a separate sound toggle.
 ]]></description>
             <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.7.0/Pysano-0.7.0.zip" length="11971563" type="application/octet-stream" sparkle:edSignature="0/wmKCqcYxT5mtMYgUMfWkek19FWaGMSBRTkhpuwSIf/uWoJNCEP9V1OGIPgmky4G8u1gi5EschWBfYYhXQXBg=="/>
         </item>
@@ -49,10 +49,10 @@
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description sparkle:format="markdown"><![CDATA[# Pysano 0.6.2
 
-- Додано focused-node fallback для ChatGPT, Codex та інших Chromium/Electron/WebKit редакторів, які повертають `AXGroup` або `AXWebArea` замість стандартного текстового AX-role.
-- Перед вставленням Pysano повторно перевіряє початковий застосунок, вікно та той самий accessibility-вузол; password і secure-контейнери залишаються заблокованими.
-- Відсутність дозволу «Доступність» більше не маскується повідомленням про невідоме текстове поле.
-- Після невдалої спроби в меню доступна санітизована діагностика фокусу без тексту поля, виділення, натиснутих клавіш або буфера обміну.
+- Added a focused-node fallback for ChatGPT, Codex, and other Chromium/Electron/WebKit editors that expose `AXGroup` or `AXWebArea` instead of a standard text AX role.
+- Before insertion, Pysano revalidates the original app, window, and Accessibility node; password and secure containers remain blocked.
+- A missing Accessibility permission is no longer masked by an unknown text-field message.
+- After a failed attempt, the menu offers sanitized focus diagnostics that exclude field text, selection, keystrokes, and clipboard contents.
 ]]></description>
             <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.6.2/Pysano-0.6.2.zip" length="11950750" type="application/octet-stream" sparkle:edSignature="hSbwaHv4Rmv0N8jIh/OJAlATU9mV0Csbn9XCAjkgElozBpBChdsY7T+1QBRytOL3eHPB8lD3kdvepGv3fvjxAg=="/>
         </item>

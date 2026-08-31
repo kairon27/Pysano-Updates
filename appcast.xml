@@ -6,6 +6,26 @@
         <description>Stable and beta updates for Pysano.</description>
         <language>en</language>
         <item>
+            <title>0.8.0-beta.3</title>
+            <pubDate>Mon, 31 Aug 2026 22:45:19 +0300</pubDate>
+            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
+            <sparkle:channel>beta</sparkle:channel>
+            <sparkle:version>16</sparkle:version>
+            <sparkle:shortVersionString>0.8.0-beta.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0 Beta 3
+
+- Fixed the inert **Names and custom terms** section while a local Auto-mode route is active. The vocabulary now remains editable and clearly shows whether it is active for Gemini or saved for a later Gemini route.
+- Added quick term entry, newline-list clipboard import, case-insensitive duplicate cleanup, focused-list guidance, and safe bulk-import limits.
+- Added optional speech protection to prevent silent or noisy recordings from inserting hallucinated text. It is enabled by default with a recommended 0.25-second minimum and can be adjusted from 0.10 to 1.00 seconds.
+- Speech detection runs locally with an adaptive noise floor. Short clicks and steady background noise are rejected; the recording remains available for Retry after changing the threshold.
+- Gemini Live still streams audio during recording, but rejected sessions are canceled before finalization and insert no text.
+- Added complete Ukrainian, English, French, and Italian localization for the new controls and feedback.
+]]></description>
+            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.3/Pysano-0.8.0-beta.3.zip" length="12165431" type="application/octet-stream" sparkle:edSignature="ElLa/Uxbnr4cE7LfEVrTIqNYHfJsJjUMQaKwZSCyy8CrySNcMpvwu/lBVSeKU8Vg3L15R/BejCUG+NM9F59eBQ=="/>
+        </item>
+        <item>
             <title>0.8.0-beta.2</title>
             <pubDate>Sat, 29 Aug 2026 21:49:54 +0300</pubDate>
             <link>https://github.com/kairon27/Pysano-Updates/releases</link>

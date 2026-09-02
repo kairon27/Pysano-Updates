@@ -6,6 +6,27 @@
         <description>Stable and beta updates for Pysano.</description>
         <language>en</language>
         <item>
+            <title>0.8.0-beta.5</title>
+            <pubDate>Wed, 02 Sep 2026 14:42:01 +0300</pubDate>
+            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
+            <sparkle:channel>beta</sparkle:channel>
+            <sparkle:version>18</sparkle:version>
+            <sparkle:shortVersionString>0.8.0-beta.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0 Beta 5
+
+- Added custom voice actions for selected text. Each action can have a short spoken command, up to ten optional aliases, a Gemini editing instruction, and its own enabled state.
+- Added strict command boundaries: an action runs only when text was selected before recording and the complete recognized utterance matches a command of at most eight words. Commands are never searched for inside longer dictation, and phrase replacements remain a separate feature.
+- Added an optional, recommended `LOCAL → GEMINI` route. A local Whisper or Parakeet model recognizes the short command on the Mac, then only the selected text and editing instruction are sent to Gemini 3.5 Flash-Lite. The recording itself stays local.
+- Added three result modes for selected-text actions: review a floating preview, replace the selection immediately, or copy the edited text to the clipboard. Preview is the recommended default and offers Replace, Copy, and Cancel.
+- The preview is positioned below the selected text when an app exposes Accessibility bounds, with a pointer-based fallback for browsers and editors that do not. Replacement still revalidates the original app, field, selection, and contents before pasting.
+- Hardened Gemini transformation prompts by encoding selected text as untrusted JSON data, while keeping user-authored action instructions separate.
+- Added migration-safe settings and complete Ukrainian, English, French, and Italian localization for custom actions, routing, previews, validation, and errors.
+]]></description>
+            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.5/Pysano-0.8.0-beta.5.zip" length="12347877" type="application/octet-stream" sparkle:edSignature="QNliB9xRhyjtQo7seToZyrbwfRZwnaEm4fKLIZ1Pr/OfSKpTLumLwD11QTKnb9lqvcWU/Vl7GxUKsxwUJXuBCA=="/>
+        </item>
+        <item>
             <title>0.8.0-beta.4</title>
             <pubDate>Wed, 02 Sep 2026 11:08:22 +0300</pubDate>
             <link>https://github.com/kairon27/Pysano-Updates/releases</link>
@@ -44,25 +65,6 @@
 - Added complete Ukrainian, English, French, and Italian localization for the new controls and feedback.
 ]]></description>
             <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.3/Pysano-0.8.0-beta.3.zip" length="12165431" type="application/octet-stream" sparkle:edSignature="ElLa/Uxbnr4cE7LfEVrTIqNYHfJsJjUMQaKwZSCyy8CrySNcMpvwu/lBVSeKU8Vg3L15R/BejCUG+NM9F59eBQ=="/>
-        </item>
-        <item>
-            <title>0.8.0-beta.2</title>
-            <pubDate>Sat, 29 Aug 2026 21:49:54 +0300</pubDate>
-            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
-            <sparkle:channel>beta</sparkle:channel>
-            <sparkle:version>15</sparkle:version>
-            <sparkle:shortVersionString>0.8.0-beta.2</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0 Beta 2
-
-- Added Russian, French, and Italian transcription-language choices for Gemini Standard, Gemini Live, Whisper, and Parakeet.
-- Added a complete Italian interface localization, including the macOS microphone permission description.
-- Interface language changes now apply after relaunch so SwiftUI views, AppKit menus, overlays, and status messages never mix languages in one session.
-- Added a localized restart prompt with **Restart now** and **Later** actions after changing the interface language.
-- Improved local signing reliability by resolving the existing compatibility certificate by fingerprint without changing Keychain trust or the app's designated requirement.
-]]></description>
-            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.2/Pysano-0.8.0-beta.2.zip" length="12109408" type="application/octet-stream" sparkle:edSignature="7UBpW1RbKeoeH/dPC03y43isaPXtKVMNLbQmwzZKxHteLxBpvb3av+V6+B7gVS7AcXxEzgC5DhSfnR/a+gapBw=="/>
         </item>
         <item>
             <title>0.7.1</title>

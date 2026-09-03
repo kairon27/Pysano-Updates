@@ -6,6 +6,26 @@
         <description>Stable and beta updates for Pysano.</description>
         <language>en</language>
         <item>
+            <title>0.8.0-beta.7</title>
+            <pubDate>Thu, 03 Sep 2026 19:51:19 +0300</pubDate>
+            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
+            <sparkle:channel>beta</sparkle:channel>
+            <sparkle:version>20</sparkle:version>
+            <sparkle:shortVersionString>0.8.0-beta.7</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0 Beta 7
+
+- Added an optional freeform Gemini voice command for selected text.
+- Assign a separate global shortcut, select text in any supported app, hold the shortcut, speak any editing instruction, and release to run it through Gemini.
+- The freeform mode accepts the complete spoken instruction and does not require a saved command or an exact eight-word phrase.
+- The default Gemini command shortcut is Control+Option+G, can be changed in Settings, and cannot duplicate the dictation shortcut.
+- Local speech models keep the command audio on the Mac; only the recognized instruction and selected text are sent to Gemini.
+- Results use the existing Preview, Replace, or Copy preference for selected-text actions.
+]]></description>
+            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.7/Pysano-0.8.0-beta.7.zip" length="12372815" type="application/octet-stream" sparkle:edSignature="u4AgYdJaK9iPVbk36sOa8OHGvyCgJLxD8lhUxowvOelfFxGVQvPmeCh04oZ7zGJ/mH8X5vrJACFJFYnCWd6IDA=="/>
+        </item>
+        <item>
             <title>0.8.0-beta.6</title>
             <pubDate>Thu, 03 Sep 2026 15:53:16 +0300</pubDate>
             <link>https://github.com/kairon27/Pysano-Updates/releases</link>
@@ -44,26 +64,6 @@
 - Added migration-safe settings and complete Ukrainian, English, French, and Italian localization for custom actions, routing, previews, validation, and errors.
 ]]></description>
             <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.5/Pysano-0.8.0-beta.5.zip" length="12347877" type="application/octet-stream" sparkle:edSignature="QNliB9xRhyjtQo7seToZyrbwfRZwnaEm4fKLIZ1Pr/OfSKpTLumLwD11QTKnb9lqvcWU/Vl7GxUKsxwUJXuBCA=="/>
-        </item>
-        <item>
-            <title>0.8.0-beta.4</title>
-            <pubDate>Wed, 02 Sep 2026 11:08:22 +0300</pubDate>
-            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
-            <sparkle:channel>beta</sparkle:channel>
-            <sparkle:version>17</sparkle:version>
-            <sparkle:shortVersionString>0.8.0-beta.4</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0 Beta 4
-
-- Added optional live draft text for installed local Whisper and Parakeet models. It refreshes from the latest 15 seconds while recording, stays entirely on the Mac, and never replaces the final full-recording pass.
-- Added automatic phrase replacements for reusable names, email addresses, links, and short snippets. Rules are stored locally, respect word boundaries, and run once without cascading into other rules.
-- Added exact voice commands for editing selected text: shorten, fix and polish, turn into a list, translate to English, and translate to Ukrainian.
-- Selected text is sent to Gemini 3.5 Flash-Lite only when voice actions are enabled, text was selected before recording, and one exact command is recognized. Ordinary local dictation never uploads the selection.
-- Added focus and selection revalidation before insertion so text changed during processing is left untouched.
-- Added complete Ukrainian, English, French, and Italian localization for the new settings, commands, privacy explanations, and errors.
-]]></description>
-            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.4/Pysano-0.8.0-beta.4.zip" length="12257055" type="application/octet-stream" sparkle:edSignature="9uTy24wD77EZmiKv69r4yYFufKbDoZhNfVT4I/5VMS5Q1XFkYS9SK61fQ7t0FkOuotx0G1L9ScY4sNhdHdbICw=="/>
         </item>
         <item>
             <title>0.7.1</title>

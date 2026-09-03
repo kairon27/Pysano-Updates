@@ -6,6 +6,25 @@
         <description>Stable and beta updates for Pysano.</description>
         <language>en</language>
         <item>
+            <title>0.8.0-beta.6</title>
+            <pubDate>Thu, 03 Sep 2026 15:53:16 +0300</pubDate>
+            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
+            <sparkle:channel>beta</sparkle:channel>
+            <sparkle:version>19</sparkle:version>
+            <sparkle:shortVersionString>0.8.0-beta.6</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0 Beta 6
+
+- Fixed voice actions for text selected in read-only content, including browser pages, Mail messages, and Telegram/Electron views.
+- Pysano now prioritizes an existing text selection even when the accessibility node is not editable or focused.
+- Added support for the text-marker selections used by WebKit and Chromium, including selection bounds for placing the floating preview near the selected text.
+- Added a bounded search inside the active window for applications that expose the selected text on a descendant accessibility node.
+- Selection contents are still captured only from the frontmost application, secure fields remain blocked, and replacement continues to revalidate the original selection before pasting.
+]]></description>
+            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.6/Pysano-0.8.0-beta.6.zip" length="12350425" type="application/octet-stream" sparkle:edSignature="d1COpvQ9B8+Inlwgue0FZoGj0MfmYG4NwBSSwy+lXUmnu7M+31ci7/1aUpijCjjvxkSuAGzghkE2l7X1zfSNDg=="/>
+        </item>
+        <item>
             <title>0.8.0-beta.5</title>
             <pubDate>Wed, 02 Sep 2026 14:42:01 +0300</pubDate>
             <link>https://github.com/kairon27/Pysano-Updates/releases</link>
@@ -45,26 +64,6 @@
 - Added complete Ukrainian, English, French, and Italian localization for the new settings, commands, privacy explanations, and errors.
 ]]></description>
             <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.4/Pysano-0.8.0-beta.4.zip" length="12257055" type="application/octet-stream" sparkle:edSignature="9uTy24wD77EZmiKv69r4yYFufKbDoZhNfVT4I/5VMS5Q1XFkYS9SK61fQ7t0FkOuotx0G1L9ScY4sNhdHdbICw=="/>
-        </item>
-        <item>
-            <title>0.8.0-beta.3</title>
-            <pubDate>Mon, 31 Aug 2026 22:45:19 +0300</pubDate>
-            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
-            <sparkle:channel>beta</sparkle:channel>
-            <sparkle:version>16</sparkle:version>
-            <sparkle:shortVersionString>0.8.0-beta.3</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0 Beta 3
-
-- Fixed the inert **Names and custom terms** section while a local Auto-mode route is active. The vocabulary now remains editable and clearly shows whether it is active for Gemini or saved for a later Gemini route.
-- Added quick term entry, newline-list clipboard import, case-insensitive duplicate cleanup, focused-list guidance, and safe bulk-import limits.
-- Added optional speech protection to prevent silent or noisy recordings from inserting hallucinated text. It is enabled by default with a recommended 0.25-second minimum and can be adjusted from 0.10 to 1.00 seconds.
-- Speech detection runs locally with an adaptive noise floor. Short clicks and steady background noise are rejected; the recording remains available for Retry after changing the threshold.
-- Gemini Live still streams audio during recording, but rejected sessions are canceled before finalization and insert no text.
-- Added complete Ukrainian, English, French, and Italian localization for the new controls and feedback.
-]]></description>
-            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.3/Pysano-0.8.0-beta.3.zip" length="12165431" type="application/octet-stream" sparkle:edSignature="ElLa/Uxbnr4cE7LfEVrTIqNYHfJsJjUMQaKwZSCyy8CrySNcMpvwu/lBVSeKU8Vg3L15R/BejCUG+NM9F59eBQ=="/>
         </item>
         <item>
             <title>0.7.1</title>

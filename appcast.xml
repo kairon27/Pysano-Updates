@@ -6,6 +6,28 @@
         <description>Stable and beta updates for Pysano.</description>
         <language>en</language>
         <item>
+            <title>0.8.0-beta.9</title>
+            <pubDate>Fri, 04 Sep 2026 20:26:55 +0300</pubDate>
+            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
+            <sparkle:channel>beta</sparkle:channel>
+            <sparkle:version>22</sparkle:version>
+            <sparkle:shortVersionString>0.8.0-beta.9</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0 Beta 9
+
+- Fixed the Live Translation setup request that Gemini rejected with WebSocket 1007 and “Unknown name inputAudioTranscription/outputAudioTranscription”. Both transcript settings now belong to the top-level setup, matching Google's Live API schema and official SDK.
+- Configuration and session rejections now display specific messages instead of a general network-error hint.
+- Audio capture settings are offered only for an audio-permission problem or a silent capture source, rather than for every Gemini error.
+- Added regression checks for the corrected request structure and non-retryable configuration errors.
+- Fixed a false timeout after releasing push-to-talk: the continuous translation model can return silent audio without a final turn marker. Pysano now keeps receiving the speech tail and finishes after a conservative interval of received silence, then drains the audio player.
+- Verified the signed app against Gemini with synthetic English → Ukrainian and Ukrainian → English audio, including returned speech, transcripts and completion; all 78 automated checks passed.
+
+Live Translation remains experimental. Speech completion uses a silence heuristic, so long translation pauses still need real-call validation. Application capture requires macOS 14.2 or later and the appropriate macOS permission. Meeting voice output requires a virtual audio device such as BlackHole; real-call compatibility still needs validation.
+]]></description>
+            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.9/Pysano-0.8.0-beta.9.zip" length="12581447" type="application/octet-stream" sparkle:edSignature="DcyhnNsBx/uefNmRBsmspGFjcuLVCCmHQOcoIWq7yaA4yd5WMGnDqDv8VzTLUWFz1aQmh2f53w4kP1B/fa3ECA=="/>
+        </item>
+        <item>
             <title>0.8.0-beta.8</title>
             <pubDate>Fri, 04 Sep 2026 19:55:09 +0300</pubDate>
             <link>https://github.com/kairon27/Pysano-Updates/releases</link>
@@ -51,25 +73,6 @@
 - Results use the existing Preview, Replace, or Copy preference for selected-text actions.
 ]]></description>
             <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.7/Pysano-0.8.0-beta.7.zip" length="12372815" type="application/octet-stream" sparkle:edSignature="u4AgYdJaK9iPVbk36sOa8OHGvyCgJLxD8lhUxowvOelfFxGVQvPmeCh04oZ7zGJ/mH8X5vrJACFJFYnCWd6IDA=="/>
-        </item>
-        <item>
-            <title>0.8.0-beta.6</title>
-            <pubDate>Thu, 03 Sep 2026 15:53:16 +0300</pubDate>
-            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
-            <sparkle:channel>beta</sparkle:channel>
-            <sparkle:version>19</sparkle:version>
-            <sparkle:shortVersionString>0.8.0-beta.6</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0 Beta 6
-
-- Fixed voice actions for text selected in read-only content, including browser pages, Mail messages, and Telegram/Electron views.
-- Pysano now prioritizes an existing text selection even when the accessibility node is not editable or focused.
-- Added support for the text-marker selections used by WebKit and Chromium, including selection bounds for placing the floating preview near the selected text.
-- Added a bounded search inside the active window for applications that expose the selected text on a descendant accessibility node.
-- Selection contents are still captured only from the frontmost application, secure fields remain blocked, and replacement continues to revalidate the original selection before pasting.
-]]></description>
-            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.6/Pysano-0.8.0-beta.6.zip" length="12350425" type="application/octet-stream" sparkle:edSignature="d1COpvQ9B8+Inlwgue0FZoGj0MfmYG4NwBSSwy+lXUmnu7M+31ci7/1aUpijCjjvxkSuAGzghkE2l7X1zfSNDg=="/>
         </item>
         <item>
             <title>0.7.1</title>

@@ -6,6 +6,33 @@
         <description>Stable and beta updates for Pysano.</description>
         <language>en</language>
         <item>
+            <title>0.8.0-beta.8</title>
+            <pubDate>Fri, 04 Sep 2026 19:55:09 +0300</pubDate>
+            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
+            <sparkle:channel>beta</sparkle:channel>
+            <sparkle:version>21</sparkle:version>
+            <sparkle:shortVersionString>0.8.0-beta.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0 Beta 8
+
+- Added an experimental Live Translation section with separate Video and Meeting modes.
+- Select an application's audio and a target language for spoken translation, with independent original-audio and translated-voice volume controls.
+- Added a separate meeting voice channel with a physical microphone, virtual audio output, Control+Option+T push-to-talk, and an explicit original-voice pass-through option.
+- Added bounded audio queues, connection status, in-memory transcripts, device-loss handling, and cancellation when the Mac sleeps or its session becomes inactive.
+- Added localized controls and permission descriptions in English, Ukrainian, French, and Italian.
+
+## Requirements and current limitations
+
+- Live Translation requires internet access and a Gemini API key with access to the preview translation model. Selected audio is sent to Google and may incur API charges.
+- Application audio capture requires macOS 14.2 or later and Screen & System Audio Recording permission. Use headphones for meetings.
+- Sending your voice into a meeting requires a separately installed virtual audio device, such as BlackHole 2ch. Choose that device as the meeting app's microphone and physical headphones as its speakers.
+- Browser selection covers application audio, not an individual tab. Dubbing has a translation delay and does not synchronize video lips.
+- This is the first implementation for testing. Automated checks pass, but the live Gemini translation probe has not completed successfully. Real process-tap capture, the end of a push-to-talk phrase, and compatibility in Meet, Zoom, Teams, Telegram and WhatsApp still require end-to-end validation. Existing dictation remains available.
+]]></description>
+            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.8/Pysano-0.8.0-beta.8.zip" length="12573682" type="application/octet-stream" sparkle:edSignature="YTZ++tzRa/bW6AdJt4QVx4a/hPYsq0zZ2S63xOr+C6r+/HH4qUaEn3a9LzMsEAQKvymj5BtTcNdoMHZ3Jcf4Ag=="/>
+        </item>
+        <item>
             <title>0.8.0-beta.7</title>
             <pubDate>Thu, 03 Sep 2026 19:51:19 +0300</pubDate>
             <link>https://github.com/kairon27/Pysano-Updates/releases</link>
@@ -43,27 +70,6 @@
 - Selection contents are still captured only from the frontmost application, secure fields remain blocked, and replacement continues to revalidate the original selection before pasting.
 ]]></description>
             <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.6/Pysano-0.8.0-beta.6.zip" length="12350425" type="application/octet-stream" sparkle:edSignature="d1COpvQ9B8+Inlwgue0FZoGj0MfmYG4NwBSSwy+lXUmnu7M+31ci7/1aUpijCjjvxkSuAGzghkE2l7X1zfSNDg=="/>
-        </item>
-        <item>
-            <title>0.8.0-beta.5</title>
-            <pubDate>Wed, 02 Sep 2026 14:42:01 +0300</pubDate>
-            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
-            <sparkle:channel>beta</sparkle:channel>
-            <sparkle:version>18</sparkle:version>
-            <sparkle:shortVersionString>0.8.0-beta.5</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0 Beta 5
-
-- Added custom voice actions for selected text. Each action can have a short spoken command, up to ten optional aliases, a Gemini editing instruction, and its own enabled state.
-- Added strict command boundaries: an action runs only when text was selected before recording and the complete recognized utterance matches a command of at most eight words. Commands are never searched for inside longer dictation, and phrase replacements remain a separate feature.
-- Added an optional, recommended `LOCAL → GEMINI` route. A local Whisper or Parakeet model recognizes the short command on the Mac, then only the selected text and editing instruction are sent to Gemini 3.5 Flash-Lite. The recording itself stays local.
-- Added three result modes for selected-text actions: review a floating preview, replace the selection immediately, or copy the edited text to the clipboard. Preview is the recommended default and offers Replace, Copy, and Cancel.
-- The preview is positioned below the selected text when an app exposes Accessibility bounds, with a pointer-based fallback for browsers and editors that do not. Replacement still revalidates the original app, field, selection, and contents before pasting.
-- Hardened Gemini transformation prompts by encoding selected text as untrusted JSON data, while keeping user-authored action instructions separate.
-- Added migration-safe settings and complete Ukrainian, English, French, and Italian localization for custom actions, routing, previews, validation, and errors.
-]]></description>
-            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.5/Pysano-0.8.0-beta.5.zip" length="12347877" type="application/octet-stream" sparkle:edSignature="QNliB9xRhyjtQo7seToZyrbwfRZwnaEm4fKLIZ1Pr/OfSKpTLumLwD11QTKnb9lqvcWU/Vl7GxUKsxwUJXuBCA=="/>
         </item>
         <item>
             <title>0.7.1</title>

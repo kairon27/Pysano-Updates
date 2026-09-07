@@ -6,6 +6,23 @@
         <description>Stable and beta updates for Pysano.</description>
         <language>en</language>
         <item>
+            <title>0.8.0-beta.11</title>
+            <pubDate>Mon, 07 Sep 2026 17:29:14 +0300</pubDate>
+            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
+            <sparkle:channel>beta</sparkle:channel>
+            <sparkle:version>24</sparkle:version>
+            <sparkle:shortVersionString>0.8.0-beta.11</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0 Beta 11
+
+- Fixed a launch crash in distributed app bundles. Pysano now loads its local-model catalog and interface localizations from the signed app's `Contents/Resources` directory instead of depending on SwiftPM's original build directory.
+- Added release-build validation for the packaged local-model catalog and Ukrainian localization resources.
+- Verified all 79 automated checks and a packaged-app launch with the original SwiftPM resource bundles unavailable.
+]]></description>
+            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.11/Pysano-0.8.0-beta.11.zip" length="12603553" type="application/octet-stream" sparkle:edSignature="ejvgCq1/XgFzbrD+tTTYw/0+csy1soic8jgLvHXTFVV062vVSoBnYzZRLGXUjmiLJBuKAPDJQXEpaSHA/B5LDg=="/>
+        </item>
+        <item>
             <title>0.8.0-beta.10</title>
             <pubDate>Sat, 05 Sep 2026 21:41:58 +0300</pubDate>
             <link>https://github.com/kairon27/Pysano-Updates/releases</link>
@@ -49,33 +66,6 @@ Meeting voice translation remains experimental. The direct microphone route and 
 Live Translation remains experimental. Speech completion uses a silence heuristic, so long translation pauses still need real-call validation. Application capture requires macOS 14.2 or later and the appropriate macOS permission. Meeting voice output requires a virtual audio device such as BlackHole; real-call compatibility still needs validation.
 ]]></description>
             <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.9/Pysano-0.8.0-beta.9.zip" length="12581447" type="application/octet-stream" sparkle:edSignature="DcyhnNsBx/uefNmRBsmspGFjcuLVCCmHQOcoIWq7yaA4yd5WMGnDqDv8VzTLUWFz1aQmh2f53w4kP1B/fa3ECA=="/>
-        </item>
-        <item>
-            <title>0.8.0-beta.8</title>
-            <pubDate>Fri, 04 Sep 2026 19:55:09 +0300</pubDate>
-            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
-            <sparkle:channel>beta</sparkle:channel>
-            <sparkle:version>21</sparkle:version>
-            <sparkle:shortVersionString>0.8.0-beta.8</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0 Beta 8
-
-- Added an experimental Live Translation section with separate Video and Meeting modes.
-- Select an application's audio and a target language for spoken translation, with independent original-audio and translated-voice volume controls.
-- Added a separate meeting voice channel with a physical microphone, virtual audio output, Control+Option+T push-to-talk, and an explicit original-voice pass-through option.
-- Added bounded audio queues, connection status, in-memory transcripts, device-loss handling, and cancellation when the Mac sleeps or its session becomes inactive.
-- Added localized controls and permission descriptions in English, Ukrainian, French, and Italian.
-
-## Requirements and current limitations
-
-- Live Translation requires internet access and a Gemini API key with access to the preview translation model. Selected audio is sent to Google and may incur API charges.
-- Application audio capture requires macOS 14.2 or later and Screen & System Audio Recording permission. Use headphones for meetings.
-- Sending your voice into a meeting requires a separately installed virtual audio device, such as BlackHole 2ch. Choose that device as the meeting app's microphone and physical headphones as its speakers.
-- Browser selection covers application audio, not an individual tab. Dubbing has a translation delay and does not synchronize video lips.
-- This is the first implementation for testing. Automated checks pass, but the live Gemini translation probe has not completed successfully. Real process-tap capture, the end of a push-to-talk phrase, and compatibility in Meet, Zoom, Teams, Telegram and WhatsApp still require end-to-end validation. Existing dictation remains available.
-]]></description>
-            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.8/Pysano-0.8.0-beta.8.zip" length="12573682" type="application/octet-stream" sparkle:edSignature="YTZ++tzRa/bW6AdJt4QVx4a/hPYsq0zZ2S63xOr+C6r+/HH4qUaEn3a9LzMsEAQKvymj5BtTcNdoMHZ3Jcf4Ag=="/>
         </item>
         <item>
             <title>0.7.1</title>

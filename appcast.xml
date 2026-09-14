@@ -6,6 +6,25 @@
         <description>Stable and beta updates for Pysano.</description>
         <language>en</language>
         <item>
+            <title>0.8.0-beta.12</title>
+            <pubDate>Mon, 14 Sep 2026 13:36:23 +0300</pubDate>
+            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
+            <sparkle:channel>beta</sparkle:channel>
+            <sparkle:version>25</sparkle:version>
+            <sparkle:shortVersionString>0.8.0-beta.12</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0 Beta 12
+
+- Added an opt-in double ⌘C shortcut that translates selected text into Ukrainian with Gemini 3.5 Flash-Lite. A single ⌘C keeps copying normally, and the translation opens in the existing preview with Copy and Replace actions.
+- Reduced idle resource use by removing the repeating two-second permission poll. Permission state still refreshes at launch, when Pysano becomes active, when Settings opens, and on a manual check.
+- Released the Settings view hierarchy when its window closes, reducing retained idle memory until Settings is opened again.
+- Added automated checks for double-press timing and reset behavior.
+- Improved release-build validation for both supported SwiftPM resource-bundle layouts.
+]]></description>
+            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.12/Pysano-0.8.0-beta.12.zip" length="12249260" type="application/octet-stream" sparkle:edSignature="9G0SsJ7+oE0+ApvFKe7izHp8sx0ICMCzwVA2/eyAlb+O8CeyWG5IBkpSxI+iqeELlGu1fYFzzMGN+skvdBX2Cw=="/>
+        </item>
+        <item>
             <title>0.8.0-beta.11</title>
             <pubDate>Mon, 07 Sep 2026 17:29:14 +0300</pubDate>
             <link>https://github.com/kairon27/Pysano-Updates/releases</link>
@@ -44,28 +63,6 @@
 Meeting voice translation remains experimental. The direct microphone route and translated output still require verification on actual devices and in a real call before claiming compatibility with every meeting client.
 ]]></description>
             <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.10/Pysano-0.8.0-beta.10.zip" length="12603864" type="application/octet-stream" sparkle:edSignature="7zWjpzQpGF3epwZxkVWmR9/nX3hrqGS8uMn79iQbQA3+XTFQmSDsMpiYegzdwyLQbuBURwGhVY+MJZ3V0fvkCw=="/>
-        </item>
-        <item>
-            <title>0.8.0-beta.9</title>
-            <pubDate>Fri, 04 Sep 2026 20:26:55 +0300</pubDate>
-            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
-            <sparkle:channel>beta</sparkle:channel>
-            <sparkle:version>22</sparkle:version>
-            <sparkle:shortVersionString>0.8.0-beta.9</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0 Beta 9
-
-- Fixed the Live Translation setup request that Gemini rejected with WebSocket 1007 and “Unknown name inputAudioTranscription/outputAudioTranscription”. Both transcript settings now belong to the top-level setup, matching Google's Live API schema and official SDK.
-- Configuration and session rejections now display specific messages instead of a general network-error hint.
-- Audio capture settings are offered only for an audio-permission problem or a silent capture source, rather than for every Gemini error.
-- Added regression checks for the corrected request structure and non-retryable configuration errors.
-- Fixed a false timeout after releasing push-to-talk: the continuous translation model can return silent audio without a final turn marker. Pysano now keeps receiving the speech tail and finishes after a conservative interval of received silence, then drains the audio player.
-- Verified the signed app against Gemini with synthetic English → Ukrainian and Ukrainian → English audio, including returned speech, transcripts and completion; all 78 automated checks passed.
-
-Live Translation remains experimental. Speech completion uses a silence heuristic, so long translation pauses still need real-call validation. Application capture requires macOS 14.2 or later and the appropriate macOS permission. Meeting voice output requires a virtual audio device such as BlackHole; real-call compatibility still needs validation.
-]]></description>
-            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.9/Pysano-0.8.0-beta.9.zip" length="12581447" type="application/octet-stream" sparkle:edSignature="DcyhnNsBx/uefNmRBsmspGFjcuLVCCmHQOcoIWq7yaA4yd5WMGnDqDv8VzTLUWFz1aQmh2f53w4kP1B/fa3ECA=="/>
         </item>
         <item>
             <title>0.7.1</title>

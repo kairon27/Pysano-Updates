@@ -6,6 +6,24 @@
         <description>Stable and beta updates for Pysano.</description>
         <language>en</language>
         <item>
+            <title>0.8.0-beta.13</title>
+            <pubDate>Mon, 14 Sep 2026 15:20:02 +0300</pubDate>
+            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
+            <sparkle:channel>beta</sparkle:channel>
+            <sparkle:version>26</sparkle:version>
+            <sparkle:shortVersionString>0.8.0-beta.13</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0 Beta 13
+
+- Added a working Listen button to selected-text translation previews.
+- Preview text is spoken by Gemini TTS with the Leda voice, using `gemini-2.5-flash-preview-tts` to match the existing project configuration.
+- The button changes to Stop playback while audio is playing. Closing, copying, or replacing the preview stops audio immediately.
+- If Gemini TTS is temporarily unavailable, Pysano falls back to the appropriate macOS system voice.
+]]></description>
+            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.13/Pysano-0.8.0-beta.13.zip" length="12276381" type="application/octet-stream" sparkle:edSignature="wWSte//LWWMY9pLeEuR1Y44ZmoTYClcZ7wnebEkqmhxCZ09VTgOOSXiHWu+t54yHmMG5tI0pXNHly6jxd+aEAg=="/>
+        </item>
+        <item>
             <title>0.8.0-beta.12</title>
             <pubDate>Mon, 14 Sep 2026 13:36:23 +0300</pubDate>
             <link>https://github.com/kairon27/Pysano-Updates/releases</link>
@@ -40,29 +58,6 @@
 - Verified all 79 automated checks and a packaged-app launch with the original SwiftPM resource bundles unavailable.
 ]]></description>
             <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.11/Pysano-0.8.0-beta.11.zip" length="12603553" type="application/octet-stream" sparkle:edSignature="ejvgCq1/XgFzbrD+tTTYw/0+csy1soic8jgLvHXTFVV062vVSoBnYzZRLGXUjmiLJBuKAPDJQXEpaSHA/B5LDg=="/>
-        </item>
-        <item>
-            <title>0.8.0-beta.10</title>
-            <pubDate>Sat, 05 Sep 2026 21:41:58 +0300</pubDate>
-            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
-            <sparkle:channel>beta</sparkle:channel>
-            <sparkle:version>23</sparkle:version>
-            <sparkle:shortVersionString>0.8.0-beta.10</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0 Beta 10
-
-- Fixed the meeting microphone failing immediately as an unavailable device. The selected input now uses a direct Core Audio device connection and no longer depends on an unstable default-device aggregate created by AVAudioEngine.
-- Added an eight-second, local-only test for the selected microphone with a live level meter and a clear result. Test audio is neither saved nor sent to Gemini or the virtual output.
-- Replaced the fixed push-to-talk shortcut menu with a shortcut recorder. Press the desired combination, a function key, Right Option, or fn/Globe; conflicts with dictation and voice-command shortcuts are rejected.
-- Added the recommended toggle behavior: press the shortcut once to start speaking and again to finish. Hold-to-talk remains available as an option.
-- Fixed browser and meeting listening sessions stopping after a temporary Core Audio route rebuild. Playback now rebuilds itself, drops stale queued sound if necessary, and keeps reconnecting after transient browser, device, or network changes until the user stops listening.
-- Meeting translation now shows separately what Gemini heard from the microphone and what it translated for the call.
-- Device failures distinguish the physical microphone from the BlackHole virtual output.
-
-Meeting voice translation remains experimental. The direct microphone route and translated output still require verification on actual devices and in a real call before claiming compatibility with every meeting client.
-]]></description>
-            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.10/Pysano-0.8.0-beta.10.zip" length="12603864" type="application/octet-stream" sparkle:edSignature="7zWjpzQpGF3epwZxkVWmR9/nX3hrqGS8uMn79iQbQA3+XTFQmSDsMpiYegzdwyLQbuBURwGhVY+MJZ3V0fvkCw=="/>
         </item>
         <item>
             <title>0.7.1</title>

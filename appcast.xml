@@ -6,6 +6,26 @@
         <description>Stable and beta updates for Pysano.</description>
         <language>en</language>
         <item>
+            <title>0.8.0-beta.15</title>
+            <pubDate>Fri, 18 Sep 2026 20:53:08 +0300</pubDate>
+            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
+            <sparkle:channel>beta</sparkle:channel>
+            <sparkle:version>28</sparkle:version>
+            <sparkle:shortVersionString>0.8.0-beta.15</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0 Beta 15
+
+- Keeps the local recorder running when the Gemini Live connection fails, preserving the complete dictation until the user stops recording.
+- Sends stopped and recovered recordings through standard transcription instead of replaying the entire recording to Gemini Live in real time on every retry.
+- Uses Gemini Files API for longer WAV recordings, then deletes the temporary remote file after transcription. Google also expires uploaded files automatically after 48 hours if immediate cleanup cannot complete.
+- Adds bounded request timeouts so a stalled upload or transcription attempt can fail visibly and retry instead of waiting forever.
+- Adds automated coverage for long-recording uploads, remote cleanup, processing failures, retry classification, and transcription request construction.
+- Selects an installed Swift SDK that is compatible with the active Apple compiler when Command Line Tools ship a mismatched default SDK.
+]]></description>
+            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.15/Pysano-0.8.0-beta.15.zip" length="12318965" type="application/octet-stream" sparkle:edSignature="z6OG/w+TGmr36/LnAltDAALBRGGlF9ROpy3rkk7475j9xgBzfYRaQGTRU223elJaBARHc8AhtBTRYr3akBMwDQ=="/>
+        </item>
+        <item>
             <title>0.8.0-beta.14</title>
             <pubDate>Fri, 18 Sep 2026 15:30:25 +0300</pubDate>
             <link>https://github.com/kairon27/Pysano-Updates/releases</link>
@@ -50,28 +70,6 @@ Real microphone, sleep/wake, browser-video, and meeting-client acceptance remain
 Meeting voice translation remains experimental. The direct microphone route and translated output still require verification on actual devices and in a real call before claiming compatibility with every meeting client.
 ]]></description>
             <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.10/Pysano-0.8.0-beta.10.zip" length="12603864" type="application/octet-stream" sparkle:edSignature="7zWjpzQpGF3epwZxkVWmR9/nX3hrqGS8uMn79iQbQA3+XTFQmSDsMpiYegzdwyLQbuBURwGhVY+MJZ3V0fvkCw=="/>
-        </item>
-        <item>
-            <title>0.8.0-beta.9</title>
-            <pubDate>Fri, 04 Sep 2026 20:26:55 +0300</pubDate>
-            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
-            <sparkle:channel>beta</sparkle:channel>
-            <sparkle:version>22</sparkle:version>
-            <sparkle:shortVersionString>0.8.0-beta.9</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0 Beta 9
-
-- Fixed the Live Translation setup request that Gemini rejected with WebSocket 1007 and “Unknown name inputAudioTranscription/outputAudioTranscription”. Both transcript settings now belong to the top-level setup, matching Google's Live API schema and official SDK.
-- Configuration and session rejections now display specific messages instead of a general network-error hint.
-- Audio capture settings are offered only for an audio-permission problem or a silent capture source, rather than for every Gemini error.
-- Added regression checks for the corrected request structure and non-retryable configuration errors.
-- Fixed a false timeout after releasing push-to-talk: the continuous translation model can return silent audio without a final turn marker. Pysano now keeps receiving the speech tail and finishes after a conservative interval of received silence, then drains the audio player.
-- Verified the signed app against Gemini with synthetic English → Ukrainian and Ukrainian → English audio, including returned speech, transcripts and completion; all 78 automated checks passed.
-
-Live Translation remains experimental. Speech completion uses a silence heuristic, so long translation pauses still need real-call validation. Application capture requires macOS 14.2 or later and the appropriate macOS permission. Meeting voice output requires a virtual audio device such as BlackHole; real-call compatibility still needs validation.
-]]></description>
-            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.9/Pysano-0.8.0-beta.9.zip" length="12581447" type="application/octet-stream" sparkle:edSignature="DcyhnNsBx/uefNmRBsmspGFjcuLVCCmHQOcoIWq7yaA4yd5WMGnDqDv8VzTLUWFz1aQmh2f53w4kP1B/fa3ECA=="/>
         </item>
         <item>
             <title>0.7.1</title>

@@ -6,58 +6,72 @@
         <description>Stable and beta updates for Pysano.</description>
         <language>en</language>
         <item>
-            <title>0.8.0-beta.13</title>
-            <pubDate>Mon, 14 Sep 2026 15:20:02 +0300</pubDate>
+            <title>0.8.0-beta.14</title>
+            <pubDate>Fri, 18 Sep 2026 15:30:25 +0300</pubDate>
             <link>https://github.com/kairon27/Pysano-Updates/releases</link>
             <sparkle:channel>beta</sparkle:channel>
-            <sparkle:version>26</sparkle:version>
-            <sparkle:shortVersionString>0.8.0-beta.13</sparkle:shortVersionString>
+            <sparkle:version>27</sparkle:version>
+            <sparkle:shortVersionString>0.8.0-beta.14</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0 Beta 13
+            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0 Beta 14
 
-- Added a working Listen button to selected-text translation previews.
-- Preview text is spoken by Gemini TTS with the Leda voice, using `gemini-2.5-flash-preview-tts` to match the existing project configuration.
-- The button changes to Stop playback while audio is playing. Closing, copying, or replacing the preview stops audio immediately.
-- If Gemini TTS is temporarily unavailable, Pysano falls back to the appropriate macOS system voice.
+- Preserves the latest completed or interrupted dictation in a private local recovery file until transcription succeeds or the user explicitly discards it.
+- Restores a pending recording after relaunch and keeps a recovered transcript available under Latest text.
+- Retries transient Gemini transcription failures automatically with bounded 1, 2, and 4 second backoff while avoiding blind retries for permanent errors.
+- Recovers usable audio after microphone, audio-route, sleep, session, or hotkey interruptions.
+- Reconnects incoming Live Translation after transient network, browser-process, audio-device, and detected silent-connection failures.
+- Restores active Live Translation channels after sleep or macOS session reactivation.
+- Adds automated coverage for recovery-file permissions, corrupt transcript isolation, retry classification, and reconnect classification.
+
+Real microphone, sleep/wake, browser-video, and meeting-client acceptance remain required before publication.
 ]]></description>
-            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.13/Pysano-0.8.0-beta.13.zip" length="12276381" type="application/octet-stream" sparkle:edSignature="wWSte//LWWMY9pLeEuR1Y44ZmoTYClcZ7wnebEkqmhxCZ09VTgOOSXiHWu+t54yHmMG5tI0pXNHly6jxd+aEAg=="/>
+            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.14/Pysano-0.8.0-beta.14.zip" length="12302106" type="application/octet-stream" sparkle:edSignature="LF+pFg62O4bBafBi+1V1SWE1MCpW444YgAnGx19ly+vOcYLACRqYT/D61QvcXs9urFb3SqGb6sB3HDeHvJaKAg=="/>
         </item>
         <item>
-            <title>0.8.0-beta.12</title>
-            <pubDate>Mon, 14 Sep 2026 13:36:23 +0300</pubDate>
+            <title>0.8.0-beta.10</title>
+            <pubDate>Sat, 05 Sep 2026 21:41:58 +0300</pubDate>
             <link>https://github.com/kairon27/Pysano-Updates/releases</link>
             <sparkle:channel>beta</sparkle:channel>
-            <sparkle:version>25</sparkle:version>
-            <sparkle:shortVersionString>0.8.0-beta.12</sparkle:shortVersionString>
+            <sparkle:version>23</sparkle:version>
+            <sparkle:shortVersionString>0.8.0-beta.10</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0 Beta 12
+            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0 Beta 10
 
-- Added an opt-in double ⌘C shortcut that translates selected text into Ukrainian with Gemini 3.5 Flash-Lite. A single ⌘C keeps copying normally, and the translation opens in the existing preview with Copy and Replace actions.
-- Reduced idle resource use by removing the repeating two-second permission poll. Permission state still refreshes at launch, when Pysano becomes active, when Settings opens, and on a manual check.
-- Released the Settings view hierarchy when its window closes, reducing retained idle memory until Settings is opened again.
-- Added automated checks for double-press timing and reset behavior.
-- Improved release-build validation for both supported SwiftPM resource-bundle layouts.
+- Fixed the meeting microphone failing immediately as an unavailable device. The selected input now uses a direct Core Audio device connection and no longer depends on an unstable default-device aggregate created by AVAudioEngine.
+- Added an eight-second, local-only test for the selected microphone with a live level meter and a clear result. Test audio is neither saved nor sent to Gemini or the virtual output.
+- Replaced the fixed push-to-talk shortcut menu with a shortcut recorder. Press the desired combination, a function key, Right Option, or fn/Globe; conflicts with dictation and voice-command shortcuts are rejected.
+- Added the recommended toggle behavior: press the shortcut once to start speaking and again to finish. Hold-to-talk remains available as an option.
+- Fixed browser and meeting listening sessions stopping after a temporary Core Audio route rebuild. Playback now rebuilds itself, drops stale queued sound if necessary, and keeps reconnecting after transient browser, device, or network changes until the user stops listening.
+- Meeting translation now shows separately what Gemini heard from the microphone and what it translated for the call.
+- Device failures distinguish the physical microphone from the BlackHole virtual output.
+
+Meeting voice translation remains experimental. The direct microphone route and translated output still require verification on actual devices and in a real call before claiming compatibility with every meeting client.
 ]]></description>
-            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.12/Pysano-0.8.0-beta.12.zip" length="12249260" type="application/octet-stream" sparkle:edSignature="9G0SsJ7+oE0+ApvFKe7izHp8sx0ICMCzwVA2/eyAlb+O8CeyWG5IBkpSxI+iqeELlGu1fYFzzMGN+skvdBX2Cw=="/>
+            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.10/Pysano-0.8.0-beta.10.zip" length="12603864" type="application/octet-stream" sparkle:edSignature="7zWjpzQpGF3epwZxkVWmR9/nX3hrqGS8uMn79iQbQA3+XTFQmSDsMpiYegzdwyLQbuBURwGhVY+MJZ3V0fvkCw=="/>
         </item>
         <item>
-            <title>0.8.0-beta.11</title>
-            <pubDate>Mon, 07 Sep 2026 17:29:14 +0300</pubDate>
+            <title>0.8.0-beta.9</title>
+            <pubDate>Fri, 04 Sep 2026 20:26:55 +0300</pubDate>
             <link>https://github.com/kairon27/Pysano-Updates/releases</link>
             <sparkle:channel>beta</sparkle:channel>
-            <sparkle:version>24</sparkle:version>
-            <sparkle:shortVersionString>0.8.0-beta.11</sparkle:shortVersionString>
+            <sparkle:version>22</sparkle:version>
+            <sparkle:shortVersionString>0.8.0-beta.9</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0 Beta 11
+            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0 Beta 9
 
-- Fixed a launch crash in distributed app bundles. Pysano now loads its local-model catalog and interface localizations from the signed app's `Contents/Resources` directory instead of depending on SwiftPM's original build directory.
-- Added release-build validation for the packaged local-model catalog and Ukrainian localization resources.
-- Verified all 79 automated checks and a packaged-app launch with the original SwiftPM resource bundles unavailable.
+- Fixed the Live Translation setup request that Gemini rejected with WebSocket 1007 and “Unknown name inputAudioTranscription/outputAudioTranscription”. Both transcript settings now belong to the top-level setup, matching Google's Live API schema and official SDK.
+- Configuration and session rejections now display specific messages instead of a general network-error hint.
+- Audio capture settings are offered only for an audio-permission problem or a silent capture source, rather than for every Gemini error.
+- Added regression checks for the corrected request structure and non-retryable configuration errors.
+- Fixed a false timeout after releasing push-to-talk: the continuous translation model can return silent audio without a final turn marker. Pysano now keeps receiving the speech tail and finishes after a conservative interval of received silence, then drains the audio player.
+- Verified the signed app against Gemini with synthetic English → Ukrainian and Ukrainian → English audio, including returned speech, transcripts and completion; all 78 automated checks passed.
+
+Live Translation remains experimental. Speech completion uses a silence heuristic, so long translation pauses still need real-call validation. Application capture requires macOS 14.2 or later and the appropriate macOS permission. Meeting voice output requires a virtual audio device such as BlackHole; real-call compatibility still needs validation.
 ]]></description>
-            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.11/Pysano-0.8.0-beta.11.zip" length="12603553" type="application/octet-stream" sparkle:edSignature="ejvgCq1/XgFzbrD+tTTYw/0+csy1soic8jgLvHXTFVV062vVSoBnYzZRLGXUjmiLJBuKAPDJQXEpaSHA/B5LDg=="/>
+            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.9/Pysano-0.8.0-beta.9.zip" length="12581447" type="application/octet-stream" sparkle:edSignature="DcyhnNsBx/uefNmRBsmspGFjcuLVCCmHQOcoIWq7yaA4yd5WMGnDqDv8VzTLUWFz1aQmh2f53w4kP1B/fa3ECA=="/>
         </item>
         <item>
             <title>0.7.1</title>

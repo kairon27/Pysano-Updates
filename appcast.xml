@@ -6,6 +6,24 @@
         <description>Stable and beta updates for Pysano.</description>
         <language>en</language>
         <item>
+            <title>0.8.0-beta.18</title>
+            <pubDate>Sat, 19 Sep 2026 15:02:27 +0300</pubDate>
+            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
+            <sparkle:channel>beta</sparkle:channel>
+            <sparkle:version>31</sparkle:version>
+            <sparkle:shortVersionString>0.8.0-beta.18</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0 Beta 18
+
+- Adds a saved Classic/New design switch in the sidebar and applies the choice immediately without restarting the app.
+- Introduces a refined interface with adaptive light and dark palettes, consistent spacing and typography, numbered section badges, unified cards, and a native segmented recording-mode control.
+- Keeps the existing classic Liquid Glass interface available and preserves it as the default for existing installations.
+- Includes all reliability improvements from Beta 17 for long recordings, accidental shortcut presses, and selected-text commands across Google Docs, Telegram, Chromium, Electron, and other applications.
+]]></description>
+            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.18/Pysano-0.8.0-beta.18.zip" length="12388968" type="application/octet-stream" sparkle:edSignature="BOnNE4won3PiHvWuQeCY/NYh429EPzMcNB91+UFvyj46Y+CUcGR51PiNMk42D4Nzr9aeUbOU3+EL96Z5J5gdBQ=="/>
+        </item>
+        <item>
             <title>0.8.0-beta.17</title>
             <pubDate>Sat, 19 Sep 2026 14:00:53 +0300</pubDate>
             <link>https://github.com/kairon27/Pysano-Updates/releases</link>
@@ -45,26 +63,6 @@
 - Adds regression coverage for silence, key-click noise, real speech, empty recognition results, and retry-worthy service errors.
 ]]></description>
             <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.16/Pysano-0.8.0-beta.16.zip" length="12319877" type="application/octet-stream" sparkle:edSignature="uq191wNX2S0GPzyXBzbR8P8Lg2V/s2vtFftOLH20ay+nk86vAgTi6IcuACTcgBKQluV5oSBZ42EWX4tPL0H9Cg=="/>
-        </item>
-        <item>
-            <title>0.8.0-beta.15</title>
-            <pubDate>Fri, 18 Sep 2026 20:53:08 +0300</pubDate>
-            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
-            <sparkle:channel>beta</sparkle:channel>
-            <sparkle:version>28</sparkle:version>
-            <sparkle:shortVersionString>0.8.0-beta.15</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0 Beta 15
-
-- Keeps the local recorder running when the Gemini Live connection fails, preserving the complete dictation until the user stops recording.
-- Sends stopped and recovered recordings through standard transcription instead of replaying the entire recording to Gemini Live in real time on every retry.
-- Uses Gemini Files API for longer WAV recordings, then deletes the temporary remote file after transcription. Google also expires uploaded files automatically after 48 hours if immediate cleanup cannot complete.
-- Adds bounded request timeouts so a stalled upload or transcription attempt can fail visibly and retry instead of waiting forever.
-- Adds automated coverage for long-recording uploads, remote cleanup, processing failures, retry classification, and transcription request construction.
-- Selects an installed Swift SDK that is compatible with the active Apple compiler when Command Line Tools ship a mismatched default SDK.
-]]></description>
-            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.15/Pysano-0.8.0-beta.15.zip" length="12318965" type="application/octet-stream" sparkle:edSignature="z6OG/w+TGmr36/LnAltDAALBRGGlF9ROpy3rkk7475j9xgBzfYRaQGTRU223elJaBARHc8AhtBTRYr3akBMwDQ=="/>
         </item>
         <item>
             <title>0.7.1</title>

@@ -6,6 +6,27 @@
         <description>Stable and beta updates for Pysano.</description>
         <language>en</language>
         <item>
+            <title>0.8.0-beta.17</title>
+            <pubDate>Sat, 19 Sep 2026 14:00:53 +0300</pubDate>
+            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
+            <sparkle:channel>beta</sparkle:channel>
+            <sparkle:version>30</sparkle:version>
+            <sparkle:shortVersionString>0.8.0-beta.17</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0 Beta 17
+
+- Reads selected text in Google Docs, Telegram, Chromium, Electron, and other applications that do not expose their selection through macOS Accessibility.
+- Falls back to a guarded Copy command only when Accessibility cannot provide the selection, then restores the complete previous clipboard contents.
+- Starts command audio capture before the fallback runs, so the beginning of a spoken instruction is not lost.
+- Handles a quick command-shortcut release while selection capture is still finishing.
+- Revalidates clipboard-based selections before Replace and cancels safely if the selection, application, window, or focus changed.
+- Prevents internal Copy events from triggering the Double Command+C translation shortcut.
+- Extends the same selection fallback to Double Command+C translation.
+]]></description>
+            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.17/Pysano-0.8.0-beta.17.zip" length="12331083" type="application/octet-stream" sparkle:edSignature="t2s6rbB920tpLLpFjlEe3Pnew+5rrBsrRce+wbWny7HNWbnUG4yFiJOlBixOi5qRXepD24n3i18XycNEBTs3Ag=="/>
+        </item>
+        <item>
             <title>0.8.0-beta.16</title>
             <pubDate>Fri, 18 Sep 2026 21:44:21 +0300</pubDate>
             <link>https://github.com/kairon27/Pysano-Updates/releases</link>
@@ -44,29 +65,6 @@
 - Selects an installed Swift SDK that is compatible with the active Apple compiler when Command Line Tools ship a mismatched default SDK.
 ]]></description>
             <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.15/Pysano-0.8.0-beta.15.zip" length="12318965" type="application/octet-stream" sparkle:edSignature="z6OG/w+TGmr36/LnAltDAALBRGGlF9ROpy3rkk7475j9xgBzfYRaQGTRU223elJaBARHc8AhtBTRYr3akBMwDQ=="/>
-        </item>
-        <item>
-            <title>0.8.0-beta.14</title>
-            <pubDate>Fri, 18 Sep 2026 15:30:25 +0300</pubDate>
-            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
-            <sparkle:channel>beta</sparkle:channel>
-            <sparkle:version>27</sparkle:version>
-            <sparkle:shortVersionString>0.8.0-beta.14</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0 Beta 14
-
-- Preserves the latest completed or interrupted dictation in a private local recovery file until transcription succeeds or the user explicitly discards it.
-- Restores a pending recording after relaunch and keeps a recovered transcript available under Latest text.
-- Retries transient Gemini transcription failures automatically with bounded 1, 2, and 4 second backoff while avoiding blind retries for permanent errors.
-- Recovers usable audio after microphone, audio-route, sleep, session, or hotkey interruptions.
-- Reconnects incoming Live Translation after transient network, browser-process, audio-device, and detected silent-connection failures.
-- Restores active Live Translation channels after sleep or macOS session reactivation.
-- Adds automated coverage for recovery-file permissions, corrupt transcript isolation, retry classification, and reconnect classification.
-
-Real microphone, sleep/wake, browser-video, and meeting-client acceptance remain required before publication.
-]]></description>
-            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.14/Pysano-0.8.0-beta.14.zip" length="12302106" type="application/octet-stream" sparkle:edSignature="LF+pFg62O4bBafBi+1V1SWE1MCpW444YgAnGx19ly+vOcYLACRqYT/D61QvcXs9urFb3SqGb6sB3HDeHvJaKAg=="/>
         </item>
         <item>
             <title>0.7.1</title>

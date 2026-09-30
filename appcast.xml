@@ -6,6 +6,24 @@
         <description>Stable and beta updates for Pysano.</description>
         <language>en</language>
         <item>
+            <title>0.8.0-beta.19</title>
+            <pubDate>Wed, 30 Sep 2026 18:06:47 +0300</pubDate>
+            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
+            <sparkle:channel>beta</sparkle:channel>
+            <sparkle:version>32</sparkle:version>
+            <sparkle:shortVersionString>0.8.0-beta.19</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0 Beta 19
+
+- Makes Gemini Live dictation start more reliably after a Mac wake, microphone switch, or transient Core Audio route change.
+- Retries focused-editor discovery when AppKit, Chromium, or Electron publishes its Accessibility focus a moment after the dictation hotkey.
+- Uses direct Accessibility insertion when the editor supports it, then verifies clipboard-based insertion and retries only when the first paste definitely changed nothing.
+- Safely reacquires web editors recreated during transcription while still refusing to overwrite a different field, changed contents, or a password field.
+]]></description>
+            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.19/Pysano-0.8.0-beta.19.zip" length="12400490" type="application/octet-stream" sparkle:edSignature="aHEpvOhlKNC+DK7yBmGdjdHp8FyTyGBrbFZ7iKzOp9t8Iv35Vz19R0xqCRB7geG+DzaBjRex87rwrpKiwhMqCQ=="/>
+        </item>
+        <item>
             <title>0.8.0-beta.18</title>
             <pubDate>Sat, 19 Sep 2026 15:02:27 +0300</pubDate>
             <link>https://github.com/kairon27/Pysano-Updates/releases</link>
@@ -43,26 +61,6 @@
 - Extends the same selection fallback to Double Command+C translation.
 ]]></description>
             <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.17/Pysano-0.8.0-beta.17.zip" length="12331083" type="application/octet-stream" sparkle:edSignature="t2s6rbB920tpLLpFjlEe3Pnew+5rrBsrRce+wbWny7HNWbnUG4yFiJOlBixOi5qRXepD24n3i18XycNEBTs3Ag=="/>
-        </item>
-        <item>
-            <title>0.8.0-beta.16</title>
-            <pubDate>Fri, 18 Sep 2026 21:44:21 +0300</pubDate>
-            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
-            <sparkle:channel>beta</sparkle:channel>
-            <sparkle:version>29</sparkle:version>
-            <sparkle:shortVersionString>0.8.0-beta.16</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0 Beta 16
-
-- Treats a quick accidental shortcut press with no speech as a harmless cancellation instead of a failed recording.
-- Automatically removes transient and durable audio after silence, a too-short recording, Gemini returning an empty transcript, or a local model finding no speech.
-- Returns immediately to Ready so the next shortcut press can begin a new dictation without opening Settings or manually discarding audio.
-- Removes an already recovered recording at launch when the active speech-protection policy identifies it as no speech.
-- Continues to preserve meaningful completed audio after network, service, and recording-interruption failures.
-- Adds regression coverage for silence, key-click noise, real speech, empty recognition results, and retry-worthy service errors.
-]]></description>
-            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.16/Pysano-0.8.0-beta.16.zip" length="12319877" type="application/octet-stream" sparkle:edSignature="uq191wNX2S0GPzyXBzbR8P8Lg2V/s2vtFftOLH20ay+nk86vAgTi6IcuACTcgBKQluV5oSBZ42EWX4tPL0H9Cg=="/>
         </item>
         <item>
             <title>0.7.1</title>

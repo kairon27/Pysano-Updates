@@ -6,6 +6,32 @@
         <description>Stable and beta updates for Pysano.</description>
         <language>en</language>
         <item>
+            <title>0.8.0-beta.22</title>
+            <pubDate>Fri, 09 Oct 2026 13:16:18 +0300</pubDate>
+            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
+            <sparkle:channel>beta</sparkle:channel>
+            <sparkle:version>35</sparkle:version>
+            <sparkle:shortVersionString>0.8.0-beta.22</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0 Beta 22
+
+- Added Russian, German, Spanish, Portuguese (Brazil and Portugal), Simplified Chinese, Japanese, Arabic and Hindi to both Live Translation language selectors: incoming listening and your outgoing meeting voice.
+- Preserves existing language settings and sends the documented language/region codes to Gemini.
+- Updates same-language detection for regional language codes so intentional silence with target-language repetition disabled is not mistaken for a stalled translation.
+- Includes all Beta 21 audio-device routing and translation recovery improvements.
+
+## Українською
+
+В обох списках мов перекладу тепер доступні також російська, німецька, іспанська, португальська (Бразилія та Португалія), китайська (спрощена), японська, арабська та гінді. Збережені налаштування залишаються без змін.
+
+## Verification
+
+98 automated checks and application compilation passed before release preparation. Tests cover each language's API code, settings round-trip and regional language matching. Live audio quality for the newly added languages has not been individually tested. Gemini API usage may incur charges; the long-session and meeting acceptance limitations documented in Beta 21 still apply.
+]]></description>
+            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.22/Pysano-0.8.0-beta.22.zip" length="12441457" type="application/octet-stream" sparkle:edSignature="CZIqkcDLY3zvLCKyzIQ+ux33n1t6md9Qxx15A4gdl1JFLnANeUiXfg0M6FwH4fSjYkJ0BfgYOf0nGjOsj67UBA=="/>
+        </item>
+        <item>
             <title>0.8.0-beta.21</title>
             <pubDate>Fri, 09 Oct 2026 12:54:09 +0300</pubDate>
             <link>https://github.com/kairon27/Pysano-Updates/releases</link>
@@ -54,24 +80,6 @@
 - Tightens original-window and field-identity checks, including pages with multiple empty editors. Never guesses a replacement field from matching text alone.
 ]]></description>
             <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.20/Pysano-0.8.0-beta.20.zip" length="12407525" type="application/octet-stream" sparkle:edSignature="WnBWgvKNvbpZbH/vAx0CWI8eYLLAP7hMqjD9Z3YdTdW+OamIBxZSBOlhoP+aYXHCUFMieokGCPDmIY/kZgtVAg=="/>
-        </item>
-        <item>
-            <title>0.8.0-beta.19</title>
-            <pubDate>Wed, 30 Sep 2026 18:06:47 +0300</pubDate>
-            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
-            <sparkle:channel>beta</sparkle:channel>
-            <sparkle:version>32</sparkle:version>
-            <sparkle:shortVersionString>0.8.0-beta.19</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0 Beta 19
-
-- Makes Gemini Live dictation start more reliably after a Mac wake, microphone switch, or transient Core Audio route change.
-- Retries focused-editor discovery when AppKit, Chromium, or Electron publishes its Accessibility focus a moment after the dictation hotkey.
-- Uses direct Accessibility insertion when the editor supports it, then verifies clipboard-based insertion and retries only when the first paste definitely changed nothing.
-- Safely reacquires web editors recreated during transcription while still refusing to overwrite a different field, changed contents, or a password field.
-]]></description>
-            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.19/Pysano-0.8.0-beta.19.zip" length="12400490" type="application/octet-stream" sparkle:edSignature="aHEpvOhlKNC+DK7yBmGdjdHp8FyTyGBrbFZ7iKzOp9t8Iv35Vz19R0xqCRB7geG+DzaBjRex87rwrpKiwhMqCQ=="/>
         </item>
         <item>
             <title>0.7.1</title>

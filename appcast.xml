@@ -6,6 +6,36 @@
         <description>Stable and beta updates for Pysano.</description>
         <language>en</language>
         <item>
+            <title>0.8.0-beta.21</title>
+            <pubDate>Fri, 09 Oct 2026 12:54:09 +0300</pubDate>
+            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
+            <sparkle:channel>beta</sparkle:channel>
+            <sparkle:version>34</sparkle:version>
+            <sparkle:shortVersionString>0.8.0-beta.21</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0 Beta 21
+
+- Live Translation can capture a selected application, microphone/virtual input, or the first audio stream of a selected output device. Output-device capture excludes Pysano's own playback and preserves the original audio. Translation playback can target a physical or virtual output.
+- Fixes missing-voice detection: input transcripts and silent PCM no longer hide a stalled translated voice. Adds recovery after capture stops delivering frames and retries transient service errors, with explicit reasons and gap warnings.
+- Fixes input/output device classification and avoids restarting capture for unrelated audio-device changes. Reuses playback converters and reduces background polling.
+- Shows input and translated signal, playback queue, recovery count and stale-audio skips. Permanent failures also appear in the menu-bar status.
+- Recovers idle meeting connections after transient failures. An interrupted spoken phrase prompts you to repeat it instead of silently losing speech or replaying an uncertain phrase. Direct virtual-device feedback routes are blocked.
+- Keeps the current specialized Gemini Live Translate model. Existing dictation and insertion fixes from Beta 20 are included.
+
+## Для тестування
+
+У налаштуваннях «Переклад наживо» виберіть джерело, мову та пристрій відтворення. Для YouTube спочатку спробуйте «Застосунок» із вашим браузером. Новий режим «Звук вихідного пристрою» захоплює звук усіх застосунків на вибраному виході, крім Pysano; гучність оригіналу в цьому режимі регулюється системою.
+
+Якщо озвучення знову зникне, перевірте індикатор сигналу перекладу, чергу звуку та «Причину останнього відновлення». Повідомте приблизний час від запуску й вибраний маршрут.
+
+## Verification and limitations
+
+97 automated checks, full application compilation and native silent-playback checks passed before release preparation. Sustained YouTube dubbing, actual output-device loopback and two-way meeting acceptance still require live testing. Use headphones with microphone capture. Audio during reconnection gaps is not replayed. Gemini requires internet and may incur API charges. This beta does not claim failure-free translation or verified compatibility with every meeting client.
+]]></description>
+            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.21/Pysano-0.8.0-beta.21.zip" length="12441590" type="application/octet-stream" sparkle:edSignature="Ocr2aXJO1uCDxiKZE4W8OuF7l+W7X/U0wBS5REBiycdPA2M+k3fMysBUEA1UUP0jk3+/K1tOP48i49xBjLdUAA=="/>
+        </item>
+        <item>
             <title>0.8.0-beta.20</title>
             <pubDate>Fri, 09 Oct 2026 12:08:22 +0300</pubDate>
             <link>https://github.com/kairon27/Pysano-Updates/releases</link>
@@ -42,24 +72,6 @@
 - Safely reacquires web editors recreated during transcription while still refusing to overwrite a different field, changed contents, or a password field.
 ]]></description>
             <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.19/Pysano-0.8.0-beta.19.zip" length="12400490" type="application/octet-stream" sparkle:edSignature="aHEpvOhlKNC+DK7yBmGdjdHp8FyTyGBrbFZ7iKzOp9t8Iv35Vz19R0xqCRB7geG+DzaBjRex87rwrpKiwhMqCQ=="/>
-        </item>
-        <item>
-            <title>0.8.0-beta.18</title>
-            <pubDate>Sat, 19 Sep 2026 15:02:27 +0300</pubDate>
-            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
-            <sparkle:channel>beta</sparkle:channel>
-            <sparkle:version>31</sparkle:version>
-            <sparkle:shortVersionString>0.8.0-beta.18</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0 Beta 18
-
-- Adds a saved Classic/New design switch in the sidebar and applies the choice immediately without restarting the app.
-- Introduces a refined interface with adaptive light and dark palettes, consistent spacing and typography, numbered section badges, unified cards, and a native segmented recording-mode control.
-- Keeps the existing classic Liquid Glass interface available and preserves it as the default for existing installations.
-- Includes all reliability improvements from Beta 17 for long recordings, accidental shortcut presses, and selected-text commands across Google Docs, Telegram, Chromium, Electron, and other applications.
-]]></description>
-            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.18/Pysano-0.8.0-beta.18.zip" length="12388968" type="application/octet-stream" sparkle:edSignature="BOnNE4won3PiHvWuQeCY/NYh429EPzMcNB91+UFvyj46Y+CUcGR51PiNMk42D4Nzr9aeUbOU3+EL96Z5J5gdBQ=="/>
         </item>
         <item>
             <title>0.7.1</title>

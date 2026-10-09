@@ -6,6 +6,26 @@
         <description>Stable and beta updates for Pysano.</description>
         <language>en</language>
         <item>
+            <title>0.8.0-beta.20</title>
+            <pubDate>Fri, 09 Oct 2026 12:08:22 +0300</pubDate>
+            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
+            <sparkle:channel>beta</sparkle:channel>
+            <sparkle:version>33</sparkle:version>
+            <sparkle:shortVersionString>0.8.0-beta.20</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0 Beta 20
+
+- Starts microphone recording before Accessibility field discovery. A temporarily unavailable field no longer prevents ordinary dictation; the transcript is copied for manual paste if the original destination cannot be identified safely.
+- Requests Chromium/Electron accessibility when focus is missing and retries without blocking the run loop between attempts. A key release during discovery is remembered, and destination retries stop if the user changes the application, window, or input context.
+- Recovers missed hotkey releases from physical key state. A temporary macOS event-tap timeout no longer cancels the recording.
+- Sends a single paste command instead of combining an unverified Accessibility write with repeated paste attempts. Keeps the transcript on the clipboard when insertion cannot be confirmed, with an explicit recovery message visible for at least six seconds when the overlay is enabled.
+- Verifies insertion using changed field contents or inserted-range text plus caret position. Restores the old clipboard only after confirmation and only if the user has not copied something newer.
+- Tightens original-window and field-identity checks, including pages with multiple empty editors. Never guesses a replacement field from matching text alone.
+]]></description>
+            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.20/Pysano-0.8.0-beta.20.zip" length="12407525" type="application/octet-stream" sparkle:edSignature="WnBWgvKNvbpZbH/vAx0CWI8eYLLAP7hMqjD9Z3YdTdW+OamIBxZSBOlhoP+aYXHCUFMieokGCPDmIY/kZgtVAg=="/>
+        </item>
+        <item>
             <title>0.8.0-beta.19</title>
             <pubDate>Wed, 30 Sep 2026 18:06:47 +0300</pubDate>
             <link>https://github.com/kairon27/Pysano-Updates/releases</link>
@@ -40,27 +60,6 @@
 - Includes all reliability improvements from Beta 17 for long recordings, accidental shortcut presses, and selected-text commands across Google Docs, Telegram, Chromium, Electron, and other applications.
 ]]></description>
             <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.18/Pysano-0.8.0-beta.18.zip" length="12388968" type="application/octet-stream" sparkle:edSignature="BOnNE4won3PiHvWuQeCY/NYh429EPzMcNB91+UFvyj46Y+CUcGR51PiNMk42D4Nzr9aeUbOU3+EL96Z5J5gdBQ=="/>
-        </item>
-        <item>
-            <title>0.8.0-beta.17</title>
-            <pubDate>Sat, 19 Sep 2026 14:00:53 +0300</pubDate>
-            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
-            <sparkle:channel>beta</sparkle:channel>
-            <sparkle:version>30</sparkle:version>
-            <sparkle:shortVersionString>0.8.0-beta.17</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0 Beta 17
-
-- Reads selected text in Google Docs, Telegram, Chromium, Electron, and other applications that do not expose their selection through macOS Accessibility.
-- Falls back to a guarded Copy command only when Accessibility cannot provide the selection, then restores the complete previous clipboard contents.
-- Starts command audio capture before the fallback runs, so the beginning of a spoken instruction is not lost.
-- Handles a quick command-shortcut release while selection capture is still finishing.
-- Revalidates clipboard-based selections before Replace and cancels safely if the selection, application, window, or focus changed.
-- Prevents internal Copy events from triggering the Double Command+C translation shortcut.
-- Extends the same selection fallback to Double Command+C translation.
-]]></description>
-            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.17/Pysano-0.8.0-beta.17.zip" length="12331083" type="application/octet-stream" sparkle:edSignature="t2s6rbB920tpLLpFjlEe3Pnew+5rrBsrRce+wbWny7HNWbnUG4yFiJOlBixOi5qRXepD24n3i18XycNEBTs3Ag=="/>
         </item>
         <item>
             <title>0.7.1</title>

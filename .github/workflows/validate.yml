@@ -1,0 +1,33 @@
+name: Validate distribution metadata
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  metadata:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate links and appcast metadata
+        run: |
+          python3 - <<'PY'
+          import pathlib, re, xml.etree.ElementTree as E
+          root=pathlib.Path('.')
+          required=['README.md','PRIVACY.md','TERMS.md','MODEL_LICENSES.md','THIRD_PARTY_NOTICES.md','KNOWN_ISSUES.md','SECURITY.md']
+          assert all((root/p).is_file() for p in required)
+          assert (root/'licenses/Sparkle-LICENSE.txt').is_file()
+          assert (root/'licenses/NemoTextProcessing-Rust-Dependencies.txt').is_file()
+          for doc in root.rglob('*.md'):
+              for link in re.findall(r'\]\(([^)]+)\)', doc.read_text()):
+                  if not re.match(r'^[a-z]+:', link) and not link.startswith('#'):
+                      assert (doc.parent/link.split('#')[0]).exists(), f'Broken link: {doc} -> {link}'
+          ns={'s':'http://www.andymatuschak.org/xml-namespaces/sparkle'}
+          for item in E.parse('appcast.xml').findall('channel/item'):
+              enc=item.find('enclosure')
+              assert enc is not None
+              assert enc.get('url','').startswith('https://github.com/kairon27/Pysano-Updates/releases/download/')
+              assert enc.get('{'+ns['s']+'}edSignature')
+              assert int(enc.get('length','0'))>0
+          print('Distribution files and appcast metadata validated')
+          PY

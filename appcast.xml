@@ -6,6 +6,32 @@
         <description>Stable and beta updates for Pysano.</description>
         <language>en</language>
         <item>
+            <title>0.8.0-beta.23</title>
+            <pubDate>Mon, 12 Oct 2026 12:58:45 +0300</pubDate>
+            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
+            <sparkle:channel>beta</sparkle:channel>
+            <sparkle:version>36</sparkle:version>
+            <sparkle:shortVersionString>0.8.0-beta.23</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0 Beta 23
+
+- Fixes editor discovery when an application reports its window or a container as focused. Capture and pre-paste verification now resolve the focused editor consistently inside the original window.
+- Gives focused-editor discovery its own time budget so scanning a large message list for selected text cannot exhaust it. Keeps the initial focus identity before recording and tolerates an initially unavailable Accessibility window appearing during warm-up, while retaining window and user-input guards.
+- Adds capture and insertion failure details under Latest text → Focus diagnostics. Diagnostics omit field values, selected text, keystrokes and clipboard contents. Unconfirmed insertion continues to preserve the transcript for recovery.
+- Removes the old product name from visible instructions and nonessential internal names. Existing signing, permission, Keychain and legacy data identifiers remain compatible; fresh installations create a Pysano signing identity.
+
+## Українською
+
+Виправлено пошук поля введення та перевірку фокусу перед вставленням готової транскрипції. Великі списки повідомлень більше не витрачають час, відведений на пошук поля. У «Останній текст → Діагностика поля введення» доступна конкретна причина відмови без вмісту поля або буфера обміну. Стару назву прибрано з інтерфейсу; сумісність із наявними дозволами, ключем і моделями збережено.
+
+## Verification
+
+100 automated checks, application compilation and 572 localized strings passed validation. Focus regressions cover structural window/container traversal, rejecting unfocused editors, and bounded search. Repeated live dictation and actual paste delivery in Telegram, Codex and browser chats still require acceptance testing; this beta does not claim the intermittent insertion problem is eliminated in every application.
+]]></description>
+            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.23/Pysano-0.8.0-beta.23.zip" length="12448379" type="application/octet-stream" sparkle:edSignature="TU6f2oFLmlupCn+jt6f60GHcRbKXUdhZZ+tpM5+/yJqs3NmMlGln10ZRSdvMAhfqCFf0ozHT12KsRFTPGybYCQ=="/>
+        </item>
+        <item>
             <title>0.8.0-beta.22</title>
             <pubDate>Fri, 09 Oct 2026 13:16:18 +0300</pubDate>
             <link>https://github.com/kairon27/Pysano-Updates/releases</link>
@@ -60,26 +86,6 @@
 97 automated checks, full application compilation and native silent-playback checks passed before release preparation. Sustained YouTube dubbing, actual output-device loopback and two-way meeting acceptance still require live testing. Use headphones with microphone capture. Audio during reconnection gaps is not replayed. Gemini requires internet and may incur API charges. This beta does not claim failure-free translation or verified compatibility with every meeting client.
 ]]></description>
             <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.21/Pysano-0.8.0-beta.21.zip" length="12441590" type="application/octet-stream" sparkle:edSignature="Ocr2aXJO1uCDxiKZE4W8OuF7l+W7X/U0wBS5REBiycdPA2M+k3fMysBUEA1UUP0jk3+/K1tOP48i49xBjLdUAA=="/>
-        </item>
-        <item>
-            <title>0.8.0-beta.20</title>
-            <pubDate>Fri, 09 Oct 2026 12:08:22 +0300</pubDate>
-            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
-            <sparkle:channel>beta</sparkle:channel>
-            <sparkle:version>33</sparkle:version>
-            <sparkle:shortVersionString>0.8.0-beta.20</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0 Beta 20
-
-- Starts microphone recording before Accessibility field discovery. A temporarily unavailable field no longer prevents ordinary dictation; the transcript is copied for manual paste if the original destination cannot be identified safely.
-- Requests Chromium/Electron accessibility when focus is missing and retries without blocking the run loop between attempts. A key release during discovery is remembered, and destination retries stop if the user changes the application, window, or input context.
-- Recovers missed hotkey releases from physical key state. A temporary macOS event-tap timeout no longer cancels the recording.
-- Sends a single paste command instead of combining an unverified Accessibility write with repeated paste attempts. Keeps the transcript on the clipboard when insertion cannot be confirmed, with an explicit recovery message visible for at least six seconds when the overlay is enabled.
-- Verifies insertion using changed field contents or inserted-range text plus caret position. Restores the old clipboard only after confirmation and only if the user has not copied something newer.
-- Tightens original-window and field-identity checks, including pages with multiple empty editors. Never guesses a replacement field from matching text alone.
-]]></description>
-            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.20/Pysano-0.8.0-beta.20.zip" length="12407525" type="application/octet-stream" sparkle:edSignature="WnBWgvKNvbpZbH/vAx0CWI8eYLLAP7hMqjD9Z3YdTdW+OamIBxZSBOlhoP+aYXHCUFMieokGCPDmIY/kZgtVAg=="/>
         </item>
         <item>
             <title>0.7.1</title>

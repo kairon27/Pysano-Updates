@@ -1,6 +1,6 @@
 # Pysano privacy notice
 
-Policy version: 2026-10-12. Version scope: existing public versions through Beta 23 plus the locally prepared Beta 24 candidate. A new user-declaration gate is implemented only in the candidate. Maintainer/publisher account: [kairon27](https://github.com/kairon27). This notice describes the app's current technical behavior; it does not claim Google, GitHub or Hugging Face follow the same retention policy as Pysano.
+Policy version: 2026-10-22. Version scope: existing public versions through Beta 23 and experimental Beta 26, including the intervening Beta 24/25 candidate changes. Beta 26 includes a user-declaration gate; versions through Beta 23 do not. Maintainer/publisher account: [kairon27](https://github.com/kairon27). This notice describes the app's current technical behavior; it does not claim Google, GitHub or Hugging Face follow the same retention policy as Pysano.
 
 ## Processing on your Mac
 
@@ -18,6 +18,12 @@ Use **Latest text → Clear** to remove the saved transcript, **Discard failed r
 
 Normal Live Translation keeps audio buffers and displayed translations in memory, without a Pysano audio/transcript archive. macOS logs can contain operational errors and app/device identity; Pysano's focus diagnostics omit field values, selected text, key values, keystrokes and clipboard contents. Do not assume arbitrary support screenshots or exported logs contain no private information.
 
+## Meeting notes (Beta 26)
+
+When explicitly started, Meeting notes records the selected microphone and optional application's audio to `~/Library/Application Support/Pysano/Meetings/<UUID>/`. Local PCM journals, metadata and completed transcript segments persist until the user removes them, including after interruption. Files use user-only permissions and are not separately encrypted; backups can contain them. Closing the settings window does not stop recording. Stop explicitly in the page/menu; sleep and capture failures interrupt capture without silently restarting it.
+
+Recognition uses an installed local model. No notes audio or transcript is sent to Gemini. Me / Meeting audio are recording channels, not verified speaker identities. Beta 26 adds optional local AI summaries using separately downloaded Qwen, Gemma or Lapa weights. The llama.cpp worker receives transcript text through stdin, has network access denied, and exits after each generation. There is no cloud fallback. Generated summaries, source quotes and resumable intermediate parts remain in the meeting folder until removed. Summary text is an AI draft that needs review. Markdown exports contain the transcript and, when generated, the local summary. WAV/Markdown exports are additional local files with new names. Use Show saved files to review/remove a session in Finder. Uninstalling the app does not remove these files. The initial recording limit is four hours; audio uses about 115 MB per hour per channel, with additional space for exports.
+
 ## Google Gemini
 
 Standard cloud dictation sends audio after recording. Live dictation/translation streams audio while active. Selected-text actions send the selected text and instruction. Cloud text-to-speech sends the preview text. Configured vocabulary and instructions can accompany applicable requests. Cloud usage requires an internet connection and may incur Google API charges.
@@ -28,7 +34,7 @@ Under [Google's current Gemini terms](https://ai.google.dev/gemini-api/terms), U
 
 ## Other network recipients
 
-Google receives authenticated requests and normal connection metadata. Model downloads connect to Hugging Face and its delivery infrastructure; GitHub hosts update archives and the feed. These providers can receive IP addresses and connection/request metadata under their own policies. Automatic update checks can be disabled under Updates. The Beta 24 candidate explicitly disables Sparkle system-profile submission and does not include an advertising or analytics SDK of its own.
+Google receives authenticated requests and normal connection metadata. Model downloads connect to Hugging Face and its delivery infrastructure; GitHub hosts update archives and the feed. These providers can receive IP addresses and connection/request metadata under their own policies. Automatic update checks can be disabled under Updates. Beta 26 explicitly disables Sparkle system-profile submission and does not include an advertising or analytics SDK of its own.
 
 ## Rights, questions and changes
 

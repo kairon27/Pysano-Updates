@@ -6,13 +6,15 @@ Pysano is an independent macOS dictation and translation app. This public reposi
 
 Download **Pysano-<version>.zip** from [Releases](https://github.com/kairon27/Pysano-Updates/releases), extract it and move Pysano.app to Applications. The distributed application requires **Apple Silicon and macOS 14 or later**; process-audio translation additionally requires macOS 14.2 or later. Intel is not supported by the supplied binary.
 
-Existing published builds through Beta 23 use a local signing certificate and are **not Developer ID notarized**. A valid local code signature and Sparkle signature do not mean Apple has approved the app. A fresh Mac may block installation through Gatekeeper. We do not recommend disabling Gatekeeper or changing system-wide trust settings.
+Experimental releases, including Beta 26, use the established local signing certificate and are **not Developer ID notarized**. Sparkle verifies beta archives with the established EdDSA key. A valid local code signature and Sparkle signature do not mean Apple has approved the app. A fresh Mac may block installation through Gatekeeper. We do not recommend disabling Gatekeeper or changing system-wide trust settings. Standard notarized releases remain subject to Developer ID and notarization checks.
 
-Beta releases are experimental. The privacy/eligibility acknowledgement and bundled notices are implemented in the prepared Beta 24 candidate; existing publicly released versions through Beta 23 do not enforce that acknowledgement. Users of existing versions remain responsible for Google eligibility and data-use rules. In Pysano, enable **Updates → Receive beta releases** to receive betas. Stable users do not receive beta updates by default. Latest does not necessarily mean Stable; check the prerelease label. The last published Stable version is 0.7.1.
+Beta releases are experimental. Beta 26 includes the privacy/eligibility acknowledgement and bundled notices; existing versions through Beta 23 do not enforce that acknowledgement. Users remain responsible for Google eligibility and data-use rules. In Pysano, enable **Updates → Receive beta releases** to receive betas. Stable users do not receive beta updates by default. Latest does not necessarily mean Stable; check the prerelease label. The last published Stable version is 0.7.1.
 
 ## Local and cloud operation
 
 Local dictation uses separately downloaded models and processes speech on this Mac. Optional selected-text actions and preview speech can still use Google even with a local dictation model. Auto mode can switch between a local and a cloud recognizer based on power settings. Live Translation uses Gemini, except the explicitly selected local microphone pass-through route.
+
+Beta 26 adds locally recorded meeting notes, local transcription and optional Ukrainian summaries with separately downloaded Gemma, Qwen or Lapa models. Summary processing has no cloud fallback. Review the AI draft against its source quotes. Recording channels do not identify individual speakers; real long-meeting acceptance remains incomplete.
 
 Cloud features are intended for **adult professional/business users** and require the user's own eligible Gemini API project. Google restricts supported regions and requires Paid Services for API clients made available to users in the EEA, Switzerland and the UK. Personal API keys do not waive Google's terms. API usage can incur charges billed by Google to the user's project; Pysano supplies no shared API key or quota.
 

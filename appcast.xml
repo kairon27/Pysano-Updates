@@ -6,6 +6,39 @@
         <description>Stable and beta updates for Pysano.</description>
         <language>en</language>
         <item>
+            <title>0.8.0-beta.28</title>
+            <pubDate>Fri, 30 Oct 2026 22:14:26 +0200</pubDate>
+            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
+            <sparkle:channel>beta</sparkle:channel>
+            <sparkle:version>42</sparkle:version>
+            <sparkle:shortVersionString>0.8.0-beta.28</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0-beta.28
+
+Build 42. Experimental beta: not notarized by Apple.
+
+The app retains the established local code-signing certificate and Sparkle EdDSA key for beta updates. It has no Developer ID signature or Apple notarization. First installation on another Mac may be blocked by Gatekeeper. This release does not require changing system security settings.
+
+- New notes workspace with a searchable recording library, summary/transcript tabs, source navigation and compact-window layout. The previous layout remains available.
+- Notes use the selected app palette, including Refined light/dark colors.
+- Separate transcription and summary model selection. Replacement transcription is checkpointed without erasing the previous readable result. Previous results are backed up before replacement; explicit summary regeneration uses a fresh cache identity.
+- More resilient insertion when an editor recreates its accessibility object. A replacement must match the original window, unchanged input context and editor anchor.
+- Prefer the app’s native Paste menu. Use private keyboard events addressed to the target process when no menu action is available. Stale global modifier flags no longer veto delivery.
+- Never automatically repeat an ambiguous paste. Unconfirmed text has separate private recovery copies under Latest text, so subsequent dictation does not overwrite it.
+- Key unlock is read-only and caches the key for the session. It no longer immediately requests an ACL rewrite. Key operations require a persistent app signature; packaging rejects ad-hoc signing.
+
+The package uses the established signing identity. macOS owns the Allow/Always Allow decision; passwords are entered only in the system dialog. No Keychain permissions are weakened.
+
+## Verification
+
+120 automated checks, 761 localized strings, 19 distribution guards and five prepared-release guards passed. Native insertion checks covered 24 consecutive insertions, UTF-16 selection, recreated editors, rejection of a different destination, targeted keyboard delivery and a delayed paste without duplication. Ten native UI renders covered both palettes and model options.
+
+Insertion checks used a synthetic editor. Live dictation into Codex and broad third-party editor acceptance still require real-world verification. AI summaries remain drafts that should be checked against their source quotes.
+]]></description>
+            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.28/Pysano-0.8.0-beta.28.zip" length="19691686" type="application/octet-stream" sparkle:edSignature="fFcP8sUhzvcQ/+SPYowOLzt1Ic+XDg1OJ4oPYD2wv63mFX5amaVRw4tV7Ix11yazKTRJ3HvCNdLfswkJj5FTDw=="/>
+        </item>
+        <item>
             <title>0.8.0-beta.26</title>
             <pubDate>Thu, 22 Oct 2026 01:15:46 +0300</pubDate>
             <link>https://github.com/kairon27/Pysano-Updates/releases</link>
@@ -67,32 +100,6 @@ Me / Meeting audio remain recording channel labels, not speaker identities. Real
 100 automated checks, application compilation and 572 localized strings passed validation. Focus regressions cover structural window/container traversal, rejecting unfocused editors, and bounded search. Repeated live dictation and actual paste delivery in Telegram, Codex and browser chats still require acceptance testing; this beta does not claim the intermittent insertion problem is eliminated in every application.
 ]]></description>
             <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.23/Pysano-0.8.0-beta.23.zip" length="12448379" type="application/octet-stream" sparkle:edSignature="TU6f2oFLmlupCn+jt6f60GHcRbKXUdhZZ+tpM5+/yJqs3NmMlGln10ZRSdvMAhfqCFf0ozHT12KsRFTPGybYCQ=="/>
-        </item>
-        <item>
-            <title>0.8.0-beta.22</title>
-            <pubDate>Fri, 09 Oct 2026 13:16:18 +0300</pubDate>
-            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
-            <sparkle:channel>beta</sparkle:channel>
-            <sparkle:version>35</sparkle:version>
-            <sparkle:shortVersionString>0.8.0-beta.22</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0 Beta 22
-
-- Added Russian, German, Spanish, Portuguese (Brazil and Portugal), Simplified Chinese, Japanese, Arabic and Hindi to both Live Translation language selectors: incoming listening and your outgoing meeting voice.
-- Preserves existing language settings and sends the documented language/region codes to Gemini.
-- Updates same-language detection for regional language codes so intentional silence with target-language repetition disabled is not mistaken for a stalled translation.
-- Includes all Beta 21 audio-device routing and translation recovery improvements.
-
-## Українською
-
-В обох списках мов перекладу тепер доступні також російська, німецька, іспанська, португальська (Бразилія та Португалія), китайська (спрощена), японська, арабська та гінді. Збережені налаштування залишаються без змін.
-
-## Verification
-
-98 automated checks and application compilation passed before release preparation. Tests cover each language's API code, settings round-trip and regional language matching. Live audio quality for the newly added languages has not been individually tested. Gemini API usage may incur charges; the long-session and meeting acceptance limitations documented in Beta 21 still apply.
-]]></description>
-            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.22/Pysano-0.8.0-beta.22.zip" length="12441457" type="application/octet-stream" sparkle:edSignature="CZIqkcDLY3zvLCKyzIQ+ux33n1t6md9Qxx15A4gdl1JFLnANeUiXfg0M6FwH4fSjYkJ0BfgYOf0nGjOsj67UBA=="/>
         </item>
         <item>
             <title>0.7.1</title>

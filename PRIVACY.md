@@ -8,11 +8,13 @@ Pysano processes microphone audio, recognized text, selected editor text and con
 
 Local dictation and local previews process audio on the Mac once models are downloaded. Phrase substitutions and settings are stored locally. Optional cloud actions, cloud preview speech and Auto-mode cloud routes remain cloud operations even when a local model is installed.
 
-The Gemini key is stored in the login Keychain and held in app memory while needed. It is sent directly to Google to authenticate requests, not to a Pysano server. Session lock/sleep handling clears the in-memory credential session. Repair key access can update the Keychain item's access control only after the user invokes the repair flow and approves any macOS prompt.
+The Gemini key is stored in the login Keychain and held in app memory while needed. It is sent directly to Google to authenticate requests, not to a Pysano server. Session lock/sleep handling clears the in-memory credential session. Repair key access performs an explicit read without rewriting the item’s access control. Choosing Always Allow in the macOS dialog remembers access for the signed application. Saving a new or replacement key is a separate explicit action.
 
 ## Recovery and deletion
 
 Pysano preserves the latest completed dictation transcript in `~/Library/Application Support/Pysano/Recovery/latest-transcript.json`. A failed/interrupted recording can be preserved as `pending-dictation.wav` for Retry. These files are restricted to the macOS user (files 0600, directory 0700), but are not separately encrypted by Pysano. They may be included in your backups. The latest text persists until replaced or cleared; a pending recording persists until successful recognition or explicit discard.
+
+If automatic insertion cannot be confirmed, a separate recovery copy is saved in `Recovery/Undelivered` with the same file permissions. Later dictation does not overwrite these copies. Review them under **Latest text → Unconfirmed insertions**, check the destination field, and use **Mark as recovered** to remove a copy. Pysano does not automatically retry an ambiguous insertion, because it might duplicate text that arrived late.
 
 Use **Latest text → Clear** to remove the saved transcript, **Discard failed recording** to remove a pending recording, **Connection → Delete key** to remove the local Keychain key, and **Delete** on a local model card to remove downloaded weights. Removing the local key does not revoke it at Google. Uninstalling only the app bundle does not remove settings, models, Keychain entries or recovery files.
 

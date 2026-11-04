@@ -13,6 +13,16 @@ Pysano's own binary-use terms do not replace or restrict the rights granted by t
 
 Full model attribution and licensing information is in [MODEL_LICENSES.md](MODEL_LICENSES.md). We include a tooling notice for [swift-argument-parser](licenses/SwiftArgumentParser-Apache-2.0.txt) (1.8.2, Apache 2.0); presence here does not claim its command-line tooling is part of the shipped Pysano executable.
 
+The Typewriter feedback sounds use edited excerpts of [Typewriter snippet 02](https://freesound.org/people/cabled_mess/sounds/360602/) and [Typewriter snippet 03](https://freesound.org/people/cabled_mess/sounds/360601/) by cabled_mess, released under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/).
+
+The Gaming Keyboard feedback sounds use edited excerpts of [Keyboard - Press down](https://freesound.org/people/Foxfire-/sounds/570754/) and [Keyboard - Key release](https://freesound.org/people/Foxfire-/sounds/570755/) by Foxfire-, also released under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/).
+
+The Toggle Switch and Wood Tap feedback sounds use edited excerpts of [Small Toggle Switch](https://freesound.org/people/loganzsound/sounds/877305/) by loganzsound and [Random Wooden Stick Foley](https://freesound.org/people/deadrobotmusic/sounds/609943/) by deadrobotmusic, respectively. Both recordings are released under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/).
+
+The Mellow Tap feedback sounds are adapted from [Woodblock-soft.wav](https://freesound.org/people/hollandm/sounds/692828/) by hollandm, released under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/).
+
+The Water Drop feedback sounds are adapted from [Water drops 1.wav](https://freesound.org/people/Zaziesound/sounds/496306/) by Zaziesound, released under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/).
+
 Existing archives through Beta 23 predate this bundled notices directory. Their byte contents and published hashes are not silently changed. The accompanying notices cover Beta 23 libraries and Beta 26; earlier releases can contain different versions or fewer components. Newly prepared binaries include their notices directly.
 
 The optional local summary worker bundles llama.cpp b11669 under MIT: [full copyright and license](licenses/llama.cpp-MIT.txt). It is launched only with installed local GGUF weights, without a server. Voicetypr was reviewed as a reference; its AGPL source code is not incorporated.

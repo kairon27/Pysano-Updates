@@ -28,7 +28,7 @@ Recognition uses an installed local model. No notes audio or transcript is sent 
 
 ## Google Gemini
 
-Standard cloud dictation sends audio after recording. Live dictation/translation streams audio while active. Selected-text actions send the selected text and instruction. Cloud text-to-speech sends the preview text. Configured vocabulary and instructions can accompany applicable requests. Cloud usage requires an internet connection and may incur Google API charges.
+Standard cloud dictation sends audio after recording. Live dictation and translation stream audio while active. Gemini selected-text actions and double-⌘C translation send the selected text and instruction. When a local model is selected for voice actions, the selected text and recognized instruction are processed by an offline worker on the Mac, and the preview uses the macOS voice for playback. Voice recognition still follows the dictation model setting. Cloud text-to-speech sends the preview text. Configured vocabulary and instructions can accompany applicable requests. Cloud usage requires an internet connection and may incur Google API charges.
 
 Long or recovered dictation can upload audio to Google's Files API. Pysano requests deletion after recognition; deletion may fail during an interruption. Google documents automatic Files API deletion after 48 hours. `store=false` on Interactions does not override Google's terms, safety logging, temporary file retention or data-processing rules. Cancelling cannot recall data already transmitted.
 

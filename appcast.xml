@@ -6,6 +6,24 @@
         <description>Stable and beta updates for Pysano.</description>
         <language>en</language>
         <item>
+            <title>0.8.0-beta.35</title>
+            <pubDate>Wed, 04 Nov 2026 20:02:14 +0200</pubDate>
+            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
+            <sparkle:channel>beta</sparkle:channel>
+            <sparkle:version>49</sparkle:version>
+            <sparkle:shortVersionString>0.8.0-beta.35</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0-beta.35
+
+Experimental beta: not notarized by Apple.
+
+- Choose Gemini, Qwen, Gemma, or Lapa for saved and freeform voice actions. Translate, summarize, rewrite, or ask a question about selected text. Local processing uses the same model downloads as Meeting notes. Choose a local dictation model as well to keep the voice instruction on the Mac.
+- Dictation sound options include macOS System, Typewriter, Gaming Keyboard, Toggle Switch, Wood Tap, Mellow Tap, and Water Drop. Preview the start and stop cues separately in Dictation settings.
+]]></description>
+            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.35/Pysano-0.8.0-beta.35.zip" length="20390836" type="application/octet-stream" sparkle:edSignature="4WMqXoIcxVh/+oBTBqPI1keJP2NwLxxJls44PNWgI5I8oFKsodjcGO7W0b3vj9WCc+5dx6dKuVMQeWKrRL4sCA=="/>
+        </item>
+        <item>
             <title>0.8.0-beta.34</title>
             <pubDate>Wed, 04 Nov 2026 18:58:24 +0200</pubDate>
             <link>https://github.com/kairon27/Pysano-Updates/releases</link>
@@ -56,43 +74,6 @@ The package uses the established signing identity. macOS owns the Allow/Always A
 Insertion checks used a synthetic editor. Live dictation into Codex and broad third-party editor acceptance still require real-world verification. AI summaries remain drafts that should be checked against their source quotes.
 ]]></description>
             <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.28/Pysano-0.8.0-beta.28.zip" length="19691686" type="application/octet-stream" sparkle:edSignature="fFcP8sUhzvcQ/+SPYowOLzt1Ic+XDg1OJ4oPYD2wv63mFX5amaVRw4tV7Ix11yazKTRJ3HvCNdLfswkJj5FTDw=="/>
-        </item>
-        <item>
-            <title>0.8.0-beta.26</title>
-            <pubDate>Thu, 22 Oct 2026 01:15:46 +0300</pubDate>
-            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
-            <sparkle:channel>beta</sparkle:channel>
-            <sparkle:version>40</sparkle:version>
-            <sparkle:shortVersionString>0.8.0-beta.26</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0 Beta 26
-
-Build 40. Experimental beta: not notarized by Apple.
-
-The app retains the established local code-signing certificate and Sparkle EdDSA key for beta updates. It has no Developer ID signature or Apple notarization. First installation on another Mac may be blocked by Gatekeeper. No system security settings need to be disabled for this release workflow.
-
-- Adds a separate Meeting notes page: microphone plus optional meeting-app audio, local transcription, resumable segments, Markdown and WAV export. Fixes early interruption when the selected meeting app is silent; microphone recording continues and preserves timeline gaps.
-- Includes the opt-in compatibility paste mode for apps whose text editors are hidden from macOS Accessibility. Target/window checks and one automatic paste remain in place. Unconfirmed insertion keeps text recoverable; repeated cross-app paste still needs real-world acceptance.
-- Adds Parakeet Ultra for local multilingual transcription, including Ukrainian. Existing v3 and Whisper models remain available; no model is silently replaced.
-- Adds optional local Ukrainian meeting summaries with Qwen3.5 4B, Gemma 4 E4B QAT and Lapa 12B v0.1.2 GGUF. Downloaded weights are pinned and verified. The bundled llama.cpp worker receives text through stdin, runs with network access denied and has no cloud fallback.
-- Summaries separate completed work, decisions, agreed tasks, proposals, important points and open questions. Every item retains a checked source quote and approximate timestamp. Unverified owner/deadline text is omitted rather than presented as an agreement. AI classification still requires user review.
-- Long transcripts use bounded chunks, saved checkpoints and hierarchical overview reduction. Pause keeps the transcript, prior summary and completed parts. Markdown exports preserve prior user files.
-- Updates FluidAudio to 0.17.7 and corresponding dependency notices. Adds synthetic Ukrainian summary comparisons and public Ukrainian ASR fixtures without accessing private meeting transcripts or Gemini.
-
-Me / Meeting audio remain recording channel labels, not speaker identities. Real 30–60 minute capture, diarization and varied Ukrainian meeting accuracy require separate acceptance. The one-hour journal/export regression is an accelerated file-storage check, not a physical recording test.
-
-## Українською
-
-Додано запис зустрічей, локальний текст і підсумки українською. У «Нотатки зустрічі» після зупинки запису натисніть «Розпізнати локально», потім «Створити локальний підсумок». Gemma 4 E4B, Qwen3.5 4B і Lapa 12B завантажуються окремо; підсумовування працює на Mac без надсилання транскрипції на сервер. Перевіряйте AI-чернетку, особливо рішення, виконавців і строки.
-
-Це експериментальна бета без Developer ID та нотаризації Apple. Оновлення підписано ключем Sparkle. Свіже встановлення на іншому Mac може потребувати окремого дозволу macOS. Підтримуються Apple Silicon і macOS 14+, захоплення звуку застосунку потребує macOS 14.2+.
-
-## Verification
-
-110 automated checks and 664 localized strings passed. Local Ukrainian model probes and a two-part summary/Markdown probe passed; cancellation preserves the original transcript. These short synthetic checks do not establish complete AI accuracy or uninterrupted hour-long physical capture.
-]]></description>
-            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.26/Pysano-0.8.0-beta.26.zip" length="19307338" type="application/octet-stream" sparkle:edSignature="g940WiHSmJxNwyFJb+WL2rTB6sUHMrfJttL19Agwo+CfeKToKKggOOSWbm1M2RgNc4XSkLO5oL/tkOX/TnY+BA=="/>
         </item>
         <item>
             <title>0.7.1</title>

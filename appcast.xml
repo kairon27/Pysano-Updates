@@ -6,6 +6,25 @@
         <description>Stable and beta updates for Pysano.</description>
         <language>en</language>
         <item>
+            <title>0.8.0-beta.34</title>
+            <pubDate>Wed, 04 Nov 2026 18:58:24 +0200</pubDate>
+            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
+            <sparkle:channel>beta</sparkle:channel>
+            <sparkle:version>48</sparkle:version>
+            <sparkle:shortVersionString>0.8.0-beta.34</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0-beta.34
+
+Experimental beta: not notarized by Apple.
+
+- The dictation indicator fades into view and shows a dot pattern that reacts to your voice. A separate animation shows transcription, and distinct icons mark success and errors.
+- Bloom and Soft Click add two new pairs of recording cues. Preview each start and stop sound separately in Dictation → Indicator and sounds.
+- Since Beta 28, Pysano has gained more local speech models, improved long meeting summaries, and separate microphone and app audio tracks for meeting notes. When capturing app audio, the microphone starts off and the dictation shortcut toggles it during the recording.
+]]></description>
+            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.34/Pysano-0.8.0-beta.34.zip" length="20152715" type="application/octet-stream" sparkle:edSignature="UrBrulUJ6bDhKaAEue0g8FSHdIZih3B01Snfl6vRSZjML8WXZEDB3XCM46MoXKINvARq1vqgWG1vAOEJ+X5+Ag=="/>
+        </item>
+        <item>
             <title>0.8.0-beta.28</title>
             <pubDate>Fri, 30 Oct 2026 22:14:26 +0200</pubDate>
             <link>https://github.com/kairon27/Pysano-Updates/releases</link>
@@ -74,32 +93,6 @@ Me / Meeting audio remain recording channel labels, not speaker identities. Real
 110 automated checks and 664 localized strings passed. Local Ukrainian model probes and a two-part summary/Markdown probe passed; cancellation preserves the original transcript. These short synthetic checks do not establish complete AI accuracy or uninterrupted hour-long physical capture.
 ]]></description>
             <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.26/Pysano-0.8.0-beta.26.zip" length="19307338" type="application/octet-stream" sparkle:edSignature="g940WiHSmJxNwyFJb+WL2rTB6sUHMrfJttL19Agwo+CfeKToKKggOOSWbm1M2RgNc4XSkLO5oL/tkOX/TnY+BA=="/>
-        </item>
-        <item>
-            <title>0.8.0-beta.23</title>
-            <pubDate>Mon, 12 Oct 2026 12:58:45 +0300</pubDate>
-            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
-            <sparkle:channel>beta</sparkle:channel>
-            <sparkle:version>36</sparkle:version>
-            <sparkle:shortVersionString>0.8.0-beta.23</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0 Beta 23
-
-- Fixes editor discovery when an application reports its window or a container as focused. Capture and pre-paste verification now resolve the focused editor consistently inside the original window.
-- Gives focused-editor discovery its own time budget so scanning a large message list for selected text cannot exhaust it. Keeps the initial focus identity before recording and tolerates an initially unavailable Accessibility window appearing during warm-up, while retaining window and user-input guards.
-- Adds capture and insertion failure details under Latest text → Focus diagnostics. Diagnostics omit field values, selected text, keystrokes and clipboard contents. Unconfirmed insertion continues to preserve the transcript for recovery.
-- Removes the old product name from visible instructions and nonessential internal names. Existing signing, permission, Keychain and legacy data identifiers remain compatible; fresh installations create a Pysano signing identity.
-
-## Українською
-
-Виправлено пошук поля введення та перевірку фокусу перед вставленням готової транскрипції. Великі списки повідомлень більше не витрачають час, відведений на пошук поля. У «Останній текст → Діагностика поля введення» доступна конкретна причина відмови без вмісту поля або буфера обміну. Стару назву прибрано з інтерфейсу; сумісність із наявними дозволами, ключем і моделями збережено.
-
-## Verification
-
-100 automated checks, application compilation and 572 localized strings passed validation. Focus regressions cover structural window/container traversal, rejecting unfocused editors, and bounded search. Repeated live dictation and actual paste delivery in Telegram, Codex and browser chats still require acceptance testing; this beta does not claim the intermittent insertion problem is eliminated in every application.
-]]></description>
-            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.23/Pysano-0.8.0-beta.23.zip" length="12448379" type="application/octet-stream" sparkle:edSignature="TU6f2oFLmlupCn+jt6f60GHcRbKXUdhZZ+tpM5+/yJqs3NmMlGln10ZRSdvMAhfqCFf0ozHT12KsRFTPGybYCQ=="/>
         </item>
         <item>
             <title>0.7.1</title>

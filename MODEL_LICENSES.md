@@ -19,3 +19,8 @@ The application verifies downloaded file sizes and SHA-256 values against its pi
 - **Lapa v0.1.2 Instruct Q4_K_M:** Lapa LLM team, based on Google Gemma 3 12B; official Lapa GGUF. Governed by [Gemma terms](https://ai.google.dev/gemma/terms), not Apache 2.0. [Pinned weights](https://huggingface.co/lapa-llm/lapa-v0.1.2-instruct-GGUF/tree/1a30af6ad6341770e84e0eb51c27d86b6bf60b41). This is the published GGUF v0.1.2, not a claimed conversion of v0.1.3.
 
 These weights remain separate downloads and are not included in the app ZIP. Downloads use immutable revisions and SHA-256 validation. Summary text and audio are never uploaded to a model provider by the local summary path.
+
+## Beta 29 local additions
+
+- **Parakeet UK v2:** NVIDIA Parakeet TDT 0.6B v3, Ukrainian fine-tuning by Yuri Ihnatov. CC BY 4.0. The supplied Core ML int8 conversion is consumed unchanged. [Pinned model, attribution, limitations and training-data disclosure](https://huggingface.co/ihnatov-yuri/parakeet-tdt-0.6b-v3-uk/tree/5c4bcfaca501587beaedfd23b72a678bf7194de1). The provider calls this version 2 (25 October 2026); its internal config version is `uk_v4b`.
+- **Nemotron Unified ASR 0.6B:** NVIDIA; unofficial Core ML conversion by Fluid Inference. [OpenMDW License 1.1 and NVIDIA notice](licenses/Nemotron-OpenMDW-1.1.md). [Pinned conversion](https://huggingface.co/FluidInference/nemotron-labs-unified-asr-0.6b-coreml/tree/bd13ddde81d3134719c520845346b3252daf3175), [original model](https://huggingface.co/nvidia/nemotron-labs-unified-asr-0.6b). Pysano uses the offline int8 encoder with the decoder, joint and vocabulary from the same revision. Streaming exports are not downloaded by this package. No NVIDIA or Apple affiliation or endorsement is implied.

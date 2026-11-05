@@ -14,7 +14,7 @@ The application verifies downloaded file sizes and SHA-256 values against its pi
 ## Beta 26 local additions
 
 - **Parakeet Ultra:** NVIDIA original Parakeet, post-training by Moondream, Core ML distribution by Fluid Inference. CC BY 4.0 attribution is retained. [Pinned conversion](https://huggingface.co/FluidInference/parakeet-ultra-coreml/tree/95eaa59a39d4394f047a4dc5cce480388a60d1b6), [Moondream model](https://huggingface.co/moondream/parakeet-ultra).
-- **Qwen3.5-4B Q4_K_M:** Qwen Team/Alibaba; GGUF conversion by Unsloth. Apache 2.0 as declared by providers. [Pinned weights](https://huggingface.co/unsloth/Qwen3.5-4B-GGUF/tree/e87f176479d0855a907a41277aca2f8ee7a09523).
+- **Qwen3.5-4B Q4_K_M and optional F16 vision projector:** Qwen Team/Alibaba; GGUF conversion by Unsloth. Apache 2.0 as declared by providers. [Pinned weights and projector](https://huggingface.co/unsloth/Qwen3.5-4B-GGUF/tree/e87f176479d0855a907a41277aca2f8ee7a09523).
 - **Gemma 4 E4B QAT Q4_0:** Google DeepMind; official GGUF distribution. Apache 2.0 as declared by provider. [Pinned weights](https://huggingface.co/google/gemma-4-E4B-it-qat-q4_0-gguf/tree/4b4a2c1d584be7264f87aac328a1bc739ce81b6c).
 - **Lapa v0.1.2 Instruct Q4_K_M:** Lapa LLM team, based on Google Gemma 3 12B; official Lapa GGUF. Governed by [Gemma terms](https://ai.google.dev/gemma/terms), not Apache 2.0. [Pinned weights](https://huggingface.co/lapa-llm/lapa-v0.1.2-instruct-GGUF/tree/1a30af6ad6341770e84e0eb51c27d86b6bf60b41). This is the published GGUF v0.1.2, not a claimed conversion of v0.1.3.
 

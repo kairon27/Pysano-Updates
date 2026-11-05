@@ -25,4 +25,4 @@ The Water Drop feedback sounds are adapted from [Water drops 1.wav](https://free
 
 Existing archives through Beta 23 predate this bundled notices directory. Their byte contents and published hashes are not silently changed. The accompanying notices cover Beta 23 libraries and Beta 26; earlier releases can contain different versions or fewer components. Newly prepared binaries include their notices directly.
 
-The optional local summary worker bundles llama.cpp b11669 under MIT: [full copyright and license](licenses/llama.cpp-MIT.txt). It is launched only with installed local GGUF weights, without a server. Voicetypr was reviewed as a reference; its AGPL source code is not incorporated.
+The optional local AI workers for summaries, text actions, dictation proofreading and screenshot questions bundle llama.cpp b11669 under MIT: [full copyright and license](licenses/llama.cpp-MIT.txt). They are launched only with installed local GGUF weights, without a server. Voicetypr was reviewed as a reference; its AGPL source code is not incorporated.

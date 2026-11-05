@@ -6,6 +6,24 @@
         <description>Stable and beta updates for Pysano.</description>
         <language>en</language>
         <item>
+            <title>0.8.0-beta.36</title>
+            <pubDate>Thu, 05 Nov 2026 12:30:24 +0200</pubDate>
+            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
+            <sparkle:channel>beta</sparkle:channel>
+            <sparkle:version>50</sparkle:version>
+            <sparkle:shortVersionString>0.8.0-beta.36</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0-beta.36
+
+Experimental beta: not notarized by Apple.
+
+- Ask questions about a selected screen area using local Qwen3.5 4B. Start from the Pysano menu or the freeform voice-command shortcut when no text is selected. Screenshot questions require local speech recognition and the optional 672 MB vision component. The result preview displays your recognized question above the answer.
+- Optionally proofread ordinary dictation with Qwen, Gemma, or Lapa before insertion. Choose the local model under Dictation. If proofreading fails, times out, changes digits, or returns an invalid result, Pysano uses the original recognized text.
+]]></description>
+            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.36/Pysano-0.8.0-beta.36.zip" length="21032448" type="application/octet-stream" sparkle:edSignature="ij2zQZpMdCXj5sbWCqcGhynP4PeVELwuQE04NSXdQQOvT3H/VMWeDtxsrwtaYm5/lGBNFxx0Qfsfg7LzVK/yCA=="/>
+        </item>
+        <item>
             <title>0.8.0-beta.35</title>
             <pubDate>Wed, 04 Nov 2026 20:02:14 +0200</pubDate>
             <link>https://github.com/kairon27/Pysano-Updates/releases</link>
@@ -41,39 +59,6 @@ Experimental beta: not notarized by Apple.
 - Since Beta 28, Pysano has gained more local speech models, improved long meeting summaries, and separate microphone and app audio tracks for meeting notes. When capturing app audio, the microphone starts off and the dictation shortcut toggles it during the recording.
 ]]></description>
             <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.34/Pysano-0.8.0-beta.34.zip" length="20152715" type="application/octet-stream" sparkle:edSignature="UrBrulUJ6bDhKaAEue0g8FSHdIZih3B01Snfl6vRSZjML8WXZEDB3XCM46MoXKINvARq1vqgWG1vAOEJ+X5+Ag=="/>
-        </item>
-        <item>
-            <title>0.8.0-beta.28</title>
-            <pubDate>Fri, 30 Oct 2026 22:14:26 +0200</pubDate>
-            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
-            <sparkle:channel>beta</sparkle:channel>
-            <sparkle:version>42</sparkle:version>
-            <sparkle:shortVersionString>0.8.0-beta.28</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0-beta.28
-
-Build 42. Experimental beta: not notarized by Apple.
-
-The app retains the established local code-signing certificate and Sparkle EdDSA key for beta updates. It has no Developer ID signature or Apple notarization. First installation on another Mac may be blocked by Gatekeeper. This release does not require changing system security settings.
-
-- New notes workspace with a searchable recording library, summary/transcript tabs, source navigation and compact-window layout. The previous layout remains available.
-- Notes use the selected app palette, including Refined light/dark colors.
-- Separate transcription and summary model selection. Replacement transcription is checkpointed without erasing the previous readable result. Previous results are backed up before replacement; explicit summary regeneration uses a fresh cache identity.
-- More resilient insertion when an editor recreates its accessibility object. A replacement must match the original window, unchanged input context and editor anchor.
-- Prefer the app’s native Paste menu. Use private keyboard events addressed to the target process when no menu action is available. Stale global modifier flags no longer veto delivery.
-- Never automatically repeat an ambiguous paste. Unconfirmed text has separate private recovery copies under Latest text, so subsequent dictation does not overwrite it.
-- Key unlock is read-only and caches the key for the session. It no longer immediately requests an ACL rewrite. Key operations require a persistent app signature; packaging rejects ad-hoc signing.
-
-The package uses the established signing identity. macOS owns the Allow/Always Allow decision; passwords are entered only in the system dialog. No Keychain permissions are weakened.
-
-## Verification
-
-120 automated checks, 761 localized strings, 19 distribution guards and five prepared-release guards passed. Native insertion checks covered 24 consecutive insertions, UTF-16 selection, recreated editors, rejection of a different destination, targeted keyboard delivery and a delayed paste without duplication. Ten native UI renders covered both palettes and model options.
-
-Insertion checks used a synthetic editor. Live dictation into Codex and broad third-party editor acceptance still require real-world verification. AI summaries remain drafts that should be checked against their source quotes.
-]]></description>
-            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.28/Pysano-0.8.0-beta.28.zip" length="19691686" type="application/octet-stream" sparkle:edSignature="fFcP8sUhzvcQ/+SPYowOLzt1Ic+XDg1OJ4oPYD2wv63mFX5amaVRw4tV7Ix11yazKTRJ3HvCNdLfswkJj5FTDw=="/>
         </item>
         <item>
             <title>0.7.1</title>

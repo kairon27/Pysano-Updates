@@ -15,7 +15,7 @@ The application verifies downloaded file sizes and SHA-256 values against its pi
 
 - **Parakeet Ultra:** NVIDIA original Parakeet, post-training by Moondream, Core ML distribution by Fluid Inference. CC BY 4.0 attribution is retained. [Pinned conversion](https://huggingface.co/FluidInference/parakeet-ultra-coreml/tree/95eaa59a39d4394f047a4dc5cce480388a60d1b6), [Moondream model](https://huggingface.co/moondream/parakeet-ultra).
 - **Qwen3.5-4B Q4_K_M and optional F16 vision projector:** Qwen Team/Alibaba; GGUF conversion by Unsloth. Apache 2.0 as declared by providers. [Pinned weights and projector](https://huggingface.co/unsloth/Qwen3.5-4B-GGUF/tree/e87f176479d0855a907a41277aca2f8ee7a09523).
-- **Gemma 4 E4B QAT Q4_0:** Google DeepMind; official GGUF distribution. Apache 2.0 as declared by provider. [Pinned weights](https://huggingface.co/google/gemma-4-E4B-it-qat-q4_0-gguf/tree/4b4a2c1d584be7264f87aac328a1bc739ce81b6c).
+- **Gemma 4 E4B QAT Q4_0 and optional vision projector:** Google DeepMind; official GGUF distribution. Apache 2.0 as declared by provider. [Pinned weights and projector](https://huggingface.co/google/gemma-4-E4B-it-qat-q4_0-gguf/tree/4b4a2c1d584be7264f87aac328a1bc739ce81b6c).
 - **Lapa v0.1.2 Instruct Q4_K_M:** Lapa LLM team, based on Google Gemma 3 12B; official Lapa GGUF. Governed by [Gemma terms](https://ai.google.dev/gemma/terms), not Apache 2.0. [Pinned weights](https://huggingface.co/lapa-llm/lapa-v0.1.2-instruct-GGUF/tree/1a30af6ad6341770e84e0eb51c27d86b6bf60b41). This is the published GGUF v0.1.2, not a claimed conversion of v0.1.3.
 
 These weights remain separate downloads and are not included in the app ZIP. Downloads use immutable revisions and SHA-256 validation. Summary text and audio are never uploaded to a model provider by the local summary path.
@@ -24,3 +24,8 @@ These weights remain separate downloads and are not included in the app ZIP. Dow
 
 - **Parakeet UK v2:** NVIDIA Parakeet TDT 0.6B v3, Ukrainian fine-tuning by Yuri Ihnatov. CC BY 4.0. The supplied Core ML int8 conversion is consumed unchanged. [Pinned model, attribution, limitations and training-data disclosure](https://huggingface.co/ihnatov-yuri/parakeet-tdt-0.6b-v3-uk/tree/5c4bcfaca501587beaedfd23b72a678bf7194de1). The provider calls this version 2 (25 October 2026); its internal config version is `uk_v4b`.
 - **Nemotron Unified ASR 0.6B:** NVIDIA; unofficial Core ML conversion by Fluid Inference. [OpenMDW License 1.1 and NVIDIA notice](licenses/Nemotron-OpenMDW-1.1.md). [Pinned conversion](https://huggingface.co/FluidInference/nemotron-labs-unified-asr-0.6b-coreml/tree/bd13ddde81d3134719c520845346b3252daf3175), [original model](https://huggingface.co/nvidia/nemotron-labs-unified-asr-0.6b). Pysano uses the offline int8 encoder with the decoder, joint and vocabulary from the same revision. Streaming exports are not downloaded by this package. No NVIDIA or Apple affiliation or endorsement is implied.
+
+## Beta 37 local additions
+
+- **Qwen3.5-9B Q4_K_M and optional F16 vision projector:** Qwen Team/Alibaba; GGUF conversion by Unsloth. Apache 2.0. [Pinned weights and projector](https://huggingface.co/unsloth/Qwen3.5-9B-GGUF/tree/3885219b6810b007914f3a7950a8d1b469d598a5).
+- **Qwen3.5-27B Q4_K_M and optional F16 vision projector:** Qwen Team/Alibaba; GGUF conversion by Unsloth. Apache 2.0. [Pinned weights and projector](https://huggingface.co/unsloth/Qwen3.5-27B-GGUF/tree/3221f178a6b842d04f1fb42f1c413534adcc0a6a).

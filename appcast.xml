@@ -6,6 +6,31 @@
         <description>Stable and beta updates for Pysano.</description>
         <language>en</language>
         <item>
+            <title>0.8.0-beta.37</title>
+            <pubDate>Fri, 06 Nov 2026 12:00:47 +0200</pubDate>
+            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
+            <sparkle:channel>beta</sparkle:channel>
+            <sparkle:version>52</sparkle:version>
+            <sparkle:shortVersionString>0.8.0-beta.37</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0-beta.37
+
+Experimental beta: not notarized by Apple.
+
+- Speak or type commands for selected text and screenshots. Enter sends a command; Shift+Enter starts a new line. The native editor restores keyboard focus when reopened and after a response.
+- Continue with a temporary chat about the original material and previous answers, using the keyboard or a spoken follow-up. Chats stay on the originally chosen model and are cleared when closed or when the Mac session locks.
+- Choose a local or cloud model explicitly for screenshot questions and quick double-⌘C translation. Model selectors clearly label Local and Cloud processing. Screenshot translation follows the requested target language.
+- Added local image support for Gemma 4 E4B and downloadable Qwen3.5 9B and 27B text/image models, with memory guidance and verified weights. Remove text models with their vision components, or remove a vision component independently.
+- Preview the exact captured screen area from its thumbnail in the answer. Capture files are removed after use; old capture leftovers are cleaned on launch. An optional setting opens area capture immediately when a command finds no selected text.
+- Local text commands and follow-ups count the full prompt with the selected model's tokenizer and choose an 8K, 16K or 32K working context, reserving room for the answer. The app does not silently truncate the source or conversation history.
+- Start a new command immediately after a failure. Retry command reuses an already recognized instruction instead of transcribing it again.
+- Reorganized settings into Dictation, Commands, Models, Appearance, Connection and Updates, with focused tabs. Unified graphite/cyan tabs, buttons, selectors and checkboxes across settings, notes and command windows. Increased text sizes, contrast and line spacing for easier reading.
+- Updated the cloud privacy disclosure to cover screenshot processing. Gemini features require acknowledging the updated disclosure once. Local image and text processing remain on this Mac; voice recognition follows the selected speech model.
+]]></description>
+            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.37/Pysano-0.8.0-beta.37.zip" length="21464381" type="application/octet-stream" sparkle:edSignature="FpxV48XTdAz/WA12GEzHgFx4Nw8w0hnmIXPWBU/lk5WiDZhZr3cvgZfNlBMu7+e9oio9i2yoRHVC756A5c66Cg=="/>
+        </item>
+        <item>
             <title>0.8.0-beta.36</title>
             <pubDate>Thu, 05 Nov 2026 12:30:24 +0200</pubDate>
             <link>https://github.com/kairon27/Pysano-Updates/releases</link>
@@ -40,25 +65,6 @@ Experimental beta: not notarized by Apple.
 - Dictation sound options include macOS System, Typewriter, Gaming Keyboard, Toggle Switch, Wood Tap, Mellow Tap, and Water Drop. Preview the start and stop cues separately in Dictation settings.
 ]]></description>
             <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.35/Pysano-0.8.0-beta.35.zip" length="20390836" type="application/octet-stream" sparkle:edSignature="4WMqXoIcxVh/+oBTBqPI1keJP2NwLxxJls44PNWgI5I8oFKsodjcGO7W0b3vj9WCc+5dx6dKuVMQeWKrRL4sCA=="/>
-        </item>
-        <item>
-            <title>0.8.0-beta.34</title>
-            <pubDate>Wed, 04 Nov 2026 18:58:24 +0200</pubDate>
-            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
-            <sparkle:channel>beta</sparkle:channel>
-            <sparkle:version>48</sparkle:version>
-            <sparkle:shortVersionString>0.8.0-beta.34</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0-beta.34
-
-Experimental beta: not notarized by Apple.
-
-- The dictation indicator fades into view and shows a dot pattern that reacts to your voice. A separate animation shows transcription, and distinct icons mark success and errors.
-- Bloom and Soft Click add two new pairs of recording cues. Preview each start and stop sound separately in Dictation → Indicator and sounds.
-- Since Beta 28, Pysano has gained more local speech models, improved long meeting summaries, and separate microphone and app audio tracks for meeting notes. When capturing app audio, the microphone starts off and the dictation shortcut toggles it during the recording.
-]]></description>
-            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.34/Pysano-0.8.0-beta.34.zip" length="20152715" type="application/octet-stream" sparkle:edSignature="UrBrulUJ6bDhKaAEue0g8FSHdIZih3B01Snfl6vRSZjML8WXZEDB3XCM46MoXKINvARq1vqgWG1vAOEJ+X5+Ag=="/>
         </item>
         <item>
             <title>0.7.1</title>

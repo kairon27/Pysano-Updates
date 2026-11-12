@@ -1,11 +1,11 @@
 # Third-party notices
 
-Pysano's own binary-use terms do not replace or restrict the rights granted by these licenses. Full copyright, permission and disclaimer texts are provided in the linked files, also included inside each newly prepared app bundle. The table describes experimental Beta 29. Upstream versions are pinned in its private Package.resolved.
+Pysano's own binary-use terms do not replace or restrict the rights granted by these licenses. Full copyright, permission and disclaimer texts are provided in the linked files, also included inside each newly prepared app bundle. The table describes Beta 38, with previous versions recorded where applicable. Upstream versions are pinned in Package.resolved.
 
 | Incorporated component | Version / license | Full notices |
 |---|---|---|
 | Argmax OSS / WhisperKit / ArgmaxCore | 1.1.0, MIT; incorporated swift-transformers portions under Apache 2.0 | [MIT](licenses/Argmax-MIT.txt), [Argmax third-party notices](licenses/Argmax-NOTICES.txt) |
-| FluidAudio | 0.18.0 in Beta 29; 0.17.7 in Beta 26/28; 0.15.6 in Beta 24/25, Apache 2.0 | [Full license](licenses/FluidAudio-Apache-2.0.txt) |
+| FluidAudio | 0.18.3 in Beta 38; 0.18.0 in published Beta 29–37; 0.17.7 in Beta 26/28; 0.15.6 in Beta 24/25, Apache 2.0 | [Full license](licenses/FluidAudio-Apache-2.0.txt) |
 | FluidAudio FastClusterWrapper | BSD, upstream fastcluster | [Copyright, conditions and disclaimer](licenses/FluidAudio-Fastcluster-BSD.txt) |
 | FluidAudio NemoTextProcessing / text-processing-rs | v0.3.1 binary in Beta 26; v0.3.0 in Beta 24/25, Apache 2.0 and MIT incorporated works | [Third-party notices](licenses/FluidAudio-NemoTextProcessing-NOTICES.md), [Apache 2.0](licenses/FluidAudio-Apache-2.0.txt), [Rust port license](licenses/NemoTextProcessing-Rust-LICENSES.txt), [Rust NOTICE](licenses/NemoTextProcessing-Rust-NOTICE.txt), [dependency license texts](licenses/NemoTextProcessing-Rust-Dependencies.txt) |
 | FluidAudio incorporated VBX work | Apache 2.0 | [Full license](licenses/FluidAudio-VBX-Apache-2.0.txt) |

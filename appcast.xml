@@ -6,6 +6,28 @@
         <description>Stable and beta updates for Pysano.</description>
         <language>en</language>
         <item>
+            <title>0.8.0-beta.38</title>
+            <pubDate>Thu, 12 Nov 2026 15:57:17 +0200</pubDate>
+            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
+            <sparkle:channel>beta</sparkle:channel>
+            <sparkle:version>53</sparkle:version>
+            <sparkle:shortVersionString>0.8.0-beta.38</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0-beta.38
+
+Experimental beta: not notarized by Apple.
+
+- Added three downloadable local speech models: Parakeet ReDux, Phonon 2.5 multilingual and NVIDIA Canary 1B v2. Manage downloads under Models and choose a model under Dictation.
+- ReDux is labelled Compact. Phonon and Canary are labelled Experimental, with guidance about GPU use, memory and language selection. These models require macOS 15 or later.
+- Canary uses the selected transcription language. Automatic and Ukrainian + English use a Ukrainian hint. Choose English for English-only recordings.
+- Fixed duplicate selection checkmarks in model, language and other dropdown lists.
+- Corrected the installed Ukrainian Parakeet model name to UK v3 and clarified the Ukrainian + English setting for mixed speech.
+- Updated the local speech runtime and preserved the installed model packages for existing users.
+]]></description>
+            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.38/Pysano-0.8.0-beta.38.zip" length="21739495" type="application/octet-stream" sparkle:edSignature="vpUlkTqyNX9YABQ21X8oHoDgAiAnqjpXIiZnUw14mPrvPc8MIvMokzCqoO96BO3cSIYkK3fgJXphGfyspUQDCA=="/>
+        </item>
+        <item>
             <title>0.8.0-beta.37</title>
             <pubDate>Fri, 06 Nov 2026 12:00:47 +0200</pubDate>
             <link>https://github.com/kairon27/Pysano-Updates/releases</link>
@@ -47,24 +69,6 @@ Experimental beta: not notarized by Apple.
 - Optionally proofread ordinary dictation with Qwen, Gemma, or Lapa before insertion. Choose the local model under Dictation. If proofreading fails, times out, changes digits, or returns an invalid result, Pysano uses the original recognized text.
 ]]></description>
             <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.36/Pysano-0.8.0-beta.36.zip" length="21032448" type="application/octet-stream" sparkle:edSignature="ij2zQZpMdCXj5sbWCqcGhynP4PeVELwuQE04NSXdQQOvT3H/VMWeDtxsrwtaYm5/lGBNFxx0Qfsfg7LzVK/yCA=="/>
-        </item>
-        <item>
-            <title>0.8.0-beta.35</title>
-            <pubDate>Wed, 04 Nov 2026 20:02:14 +0200</pubDate>
-            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
-            <sparkle:channel>beta</sparkle:channel>
-            <sparkle:version>49</sparkle:version>
-            <sparkle:shortVersionString>0.8.0-beta.35</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0-beta.35
-
-Experimental beta: not notarized by Apple.
-
-- Choose Gemini, Qwen, Gemma, or Lapa for saved and freeform voice actions. Translate, summarize, rewrite, or ask a question about selected text. Local processing uses the same model downloads as Meeting notes. Choose a local dictation model as well to keep the voice instruction on the Mac.
-- Dictation sound options include macOS System, Typewriter, Gaming Keyboard, Toggle Switch, Wood Tap, Mellow Tap, and Water Drop. Preview the start and stop cues separately in Dictation settings.
-]]></description>
-            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.35/Pysano-0.8.0-beta.35.zip" length="20390836" type="application/octet-stream" sparkle:edSignature="4WMqXoIcxVh/+oBTBqPI1keJP2NwLxxJls44PNWgI5I8oFKsodjcGO7W0b3vj9WCc+5dx6dKuVMQeWKrRL4sCA=="/>
         </item>
         <item>
             <title>0.7.1</title>

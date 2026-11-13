@@ -10,6 +10,8 @@ Experimental releases, including Beta 26, use the established local signing cert
 
 Beta releases are experimental. Beta 26 includes the privacy/eligibility acknowledgement and bundled notices; existing versions through Beta 23 do not enforce that acknowledgement. Users remain responsible for Google eligibility and data-use rules. In Pysano, enable **Updates → Receive beta releases** to receive betas. Stable users do not receive beta updates by default. Latest does not necessarily mean Stable; check the prerelease label. The last published Stable version is 0.7.1.
 
+Security notice, 13 November 2026: legacy Stable 0.7.1 bundles Sparkle 2.9.2, which is covered by later upstream security advisories. Beta 38 bundles Sparkle 2.10.0 with those fixes. Prefer the current fixed updater rather than a fresh installation of 0.7.1. A replacement Stable release is being prepared; the existing legacy archive remains unchanged for provenance. See [Known issues](KNOWN_ISSUES.md).
+
 ## Local and cloud operation
 
 Local dictation uses separately downloaded models and processes speech on this Mac. Optional selected-text actions and preview speech can still use Google even with a local dictation model. Auto mode can switch between a local and a cloud recognizer based on power settings. Live Translation uses Gemini, except the explicitly selected local microphone pass-through route.

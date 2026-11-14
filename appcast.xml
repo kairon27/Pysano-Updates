@@ -6,6 +6,33 @@
         <description>Stable and beta updates for Pysano.</description>
         <language>en</language>
         <item>
+            <title>0.8.0</title>
+            <pubDate>Sat, 14 Nov 2026 16:55:25 +0200</pubDate>
+            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
+            <sparkle:version>55</sparkle:version>
+            <sparkle:shortVersionString>0.8.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0
+
+- Refreshed settings, tabs, buttons and model selectors with clearer local/cloud labels.
+- Ask about selected text or screenshots by voice or keyboard, preview the result and continue with temporary follow-up questions. Review the original question and captured image alongside the answer.
+- Choose the model for text commands, image questions and quick translation; manage downloaded text/image models and optional dictation proofreading.
+- More local speech models and additional dictation sound styles, including keyboard, typewriter and water sounds.
+- Translate selected text or a captured screen area, with separate default languages for text and images. Change the target language in the result without capturing the source again.
+- Use local or Gemini cloud models for note transcription and summaries. Add, edit and remove Gemini model profiles using the existing Gemini key.
+- Move an entire note recording to the macOS Trash after confirmation. Audio, transcript, summary and working files stay together; external exports are preserved.
+- Updated Argmax/WhisperKit to 1.1.1, including crash and canceled-download fixes and removal of automatic Hugging Face token-file reads.
+- Updated Sparkle to 2.10.1, including the Unicode-path premature-installation fix and missing Ukrainian updater translations.
+- Updated audio-permission descriptions to explain explicitly selected cloud note processing.
+
+Stable release: locally signed, not notarized by Apple.
+
+This Stable uses the established Pysano certificate and Sparkle EdDSA update key. It is not Developer ID notarized; a fresh Mac may block installation through Gatekeeper. No system security settings are changed. Existing keys, local models, settings and recordings are retained. Review the Known issues included with the app for acceptance limits and cloud quota behavior.
+]]></description>
+            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0/Pysano-0.8.0.zip" length="21912248" type="application/octet-stream" sparkle:edSignature="gCM6jMlo8M2xe1VFwk6I1ztZy6KacPNrN0OsAA53dHastwPBB0J/93z07/6M2kvEjdt53Bloz+YpVLnQl1D/CA=="/>
+        </item>
+        <item>
             <title>0.8.0-beta.38</title>
             <pubDate>Thu, 12 Nov 2026 15:57:17 +0200</pubDate>
             <link>https://github.com/kairon27/Pysano-Updates/releases</link>
@@ -26,49 +53,6 @@ Experimental beta: not notarized by Apple.
 - Updated the local speech runtime and preserved the installed model packages for existing users.
 ]]></description>
             <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.38/Pysano-0.8.0-beta.38.zip" length="21739495" type="application/octet-stream" sparkle:edSignature="vpUlkTqyNX9YABQ21X8oHoDgAiAnqjpXIiZnUw14mPrvPc8MIvMokzCqoO96BO3cSIYkK3fgJXphGfyspUQDCA=="/>
-        </item>
-        <item>
-            <title>0.8.0-beta.37</title>
-            <pubDate>Fri, 06 Nov 2026 12:00:47 +0200</pubDate>
-            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
-            <sparkle:channel>beta</sparkle:channel>
-            <sparkle:version>52</sparkle:version>
-            <sparkle:shortVersionString>0.8.0-beta.37</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0-beta.37
-
-Experimental beta: not notarized by Apple.
-
-- Speak or type commands for selected text and screenshots. Enter sends a command; Shift+Enter starts a new line. The native editor restores keyboard focus when reopened and after a response.
-- Continue with a temporary chat about the original material and previous answers, using the keyboard or a spoken follow-up. Chats stay on the originally chosen model and are cleared when closed or when the Mac session locks.
-- Choose a local or cloud model explicitly for screenshot questions and quick double-⌘C translation. Model selectors clearly label Local and Cloud processing. Screenshot translation follows the requested target language.
-- Added local image support for Gemma 4 E4B and downloadable Qwen3.5 9B and 27B text/image models, with memory guidance and verified weights. Remove text models with their vision components, or remove a vision component independently.
-- Preview the exact captured screen area from its thumbnail in the answer. Capture files are removed after use; old capture leftovers are cleaned on launch. An optional setting opens area capture immediately when a command finds no selected text.
-- Local text commands and follow-ups count the full prompt with the selected model's tokenizer and choose an 8K, 16K or 32K working context, reserving room for the answer. The app does not silently truncate the source or conversation history.
-- Start a new command immediately after a failure. Retry command reuses an already recognized instruction instead of transcribing it again.
-- Reorganized settings into Dictation, Commands, Models, Appearance, Connection and Updates, with focused tabs. Unified graphite/cyan tabs, buttons, selectors and checkboxes across settings, notes and command windows. Increased text sizes, contrast and line spacing for easier reading.
-- Updated the cloud privacy disclosure to cover screenshot processing. Gemini features require acknowledging the updated disclosure once. Local image and text processing remain on this Mac; voice recognition follows the selected speech model.
-]]></description>
-            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.37/Pysano-0.8.0-beta.37.zip" length="21464381" type="application/octet-stream" sparkle:edSignature="FpxV48XTdAz/WA12GEzHgFx4Nw8w0hnmIXPWBU/lk5WiDZhZr3cvgZfNlBMu7+e9oio9i2yoRHVC756A5c66Cg=="/>
-        </item>
-        <item>
-            <title>0.8.0-beta.36</title>
-            <pubDate>Thu, 05 Nov 2026 12:30:24 +0200</pubDate>
-            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
-            <sparkle:channel>beta</sparkle:channel>
-            <sparkle:version>50</sparkle:version>
-            <sparkle:shortVersionString>0.8.0-beta.36</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.0-beta.36
-
-Experimental beta: not notarized by Apple.
-
-- Ask questions about a selected screen area using local Qwen3.5 4B. Start from the Pysano menu or the freeform voice-command shortcut when no text is selected. Screenshot questions require local speech recognition and the optional 672 MB vision component. The result preview displays your recognized question above the answer.
-- Optionally proofread ordinary dictation with Qwen, Gemma, or Lapa before insertion. Choose the local model under Dictation. If proofreading fails, times out, changes digits, or returns an invalid result, Pysano uses the original recognized text.
-]]></description>
-            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.0-beta.36/Pysano-0.8.0-beta.36.zip" length="21032448" type="application/octet-stream" sparkle:edSignature="ij2zQZpMdCXj5sbWCqcGhynP4PeVELwuQE04NSXdQQOvT3H/VMWeDtxsrwtaYm5/lGBNFxx0Qfsfg7LzVK/yCA=="/>
         </item>
         <item>
             <title>0.7.1</title>
@@ -103,23 +87,6 @@ Experimental beta: not notarized by Apple.
 - Added native macOS sounds at recording start and completion, with a separate sound toggle.
 ]]></description>
             <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.7.0/Pysano-0.7.0.zip" length="11971563" type="application/octet-stream" sparkle:edSignature="0/wmKCqcYxT5mtMYgUMfWkek19FWaGMSBRTkhpuwSIf/uWoJNCEP9V1OGIPgmky4G8u1gi5EschWBfYYhXQXBg=="/>
-        </item>
-        <item>
-            <title>0.6.2</title>
-            <pubDate>Fri, 28 Aug 2026 22:17:05 +0300</pubDate>
-            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
-            <sparkle:version>11</sparkle:version>
-            <sparkle:shortVersionString>0.6.2</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Pysano 0.6.2
-
-- Added a focused-node fallback for ChatGPT, Codex, and other Chromium/Electron/WebKit editors that expose `AXGroup` or `AXWebArea` instead of a standard text AX role.
-- Before insertion, Pysano revalidates the original app, window, and Accessibility node; password and secure containers remain blocked.
-- A missing Accessibility permission is no longer masked by an unknown text-field message.
-- After a failed attempt, the menu offers sanitized focus diagnostics that exclude field text, selection, keystrokes, and clipboard contents.
-]]></description>
-            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.6.2/Pysano-0.6.2.zip" length="11950750" type="application/octet-stream" sparkle:edSignature="hSbwaHv4Rmv0N8jIh/OJAlATU9mV0Csbn9XCAjkgElozBpBChdsY7T+1QBRytOL3eHPB8lD3kdvepGv3fvjxAg=="/>
         </item>
     </channel>
 </rss>

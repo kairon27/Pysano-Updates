@@ -8,17 +8,23 @@ Download **Pysano-<version>.zip** from [Releases](https://github.com/kairon27/Py
 
 Experimental releases, including Beta 26, use the established local signing certificate and are **not Developer ID notarized**. Sparkle verifies beta archives with the established EdDSA key. A valid local code signature and Sparkle signature do not mean Apple has approved the app. A fresh Mac may block installation through Gatekeeper. We do not recommend disabling Gatekeeper or changing system-wide trust settings. Standard notarized releases remain subject to Developer ID and notarization checks.
 
-Beta releases are experimental. Beta 26 includes the privacy/eligibility acknowledgement and bundled notices; existing versions through Beta 23 do not enforce that acknowledgement. Users remain responsible for Google eligibility and data-use rules. In Pysano, enable **Updates → Receive beta releases** to receive betas. Stable users do not receive beta updates by default. Latest does not necessarily mean Stable; check the prerelease label. The last published Stable version is 0.7.1.
+Stable release: locally signed, not notarized by Apple.
 
-Security notice, 13 November 2026: legacy Stable 0.7.1 bundles Sparkle 2.9.2, which is covered by later upstream security advisories. Beta 38 bundles Sparkle 2.10.0 with those fixes. Prefer the current fixed updater rather than a fresh installation of 0.7.1. A replacement Stable release is being prepared; the existing legacy archive remains unchanged for provenance. See [Known issues](KNOWN_ISSUES.md).
+Stable 0.8.0 uses the established local Pysano certificate and Sparkle EdDSA key, with explicit owner approval. Stable is the update channel; it is not an Apple endorsement. A fresh Mac may block installation through Gatekeeper. No system security settings or Keychain access policies are weakened.
+
+Beta releases are experimental. Beta 26 includes the privacy/eligibility acknowledgement and bundled notices; existing versions through Beta 23 do not enforce that acknowledgement. Users remain responsible for Google eligibility and data-use rules. In Pysano, enable **Updates → Receive beta releases** to receive betas. Stable users do not receive beta updates by default. Latest does not necessarily mean Stable; check the prerelease label. The current Stable version is 0.8.0; verify its presence in Releases and the signed feed.
+
+Security notice, 13 November 2026: legacy Stable 0.7.1 bundles Sparkle 2.9.2, which is covered by later upstream security advisories. Stable 0.8.0 bundles Sparkle 2.10.1 and Beta 38 bundles 2.10.0 with those fixes. Prefer 0.8.0 rather than a fresh installation of 0.7.1; the existing legacy archive remains unchanged for provenance. See [Known issues](KNOWN_ISSUES.md).
 
 ## Local and cloud operation
 
 Local dictation uses separately downloaded models and processes speech on this Mac. Optional selected-text actions and preview speech can still use Google even with a local dictation model. Auto mode can switch between a local and a cloud recognizer based on power settings. Live Translation uses Gemini, except the explicitly selected local microphone pass-through route.
 
-Beta 26 adds locally recorded meeting notes, local transcription and optional Ukrainian summaries with separately downloaded Gemma, Qwen or Lapa models. Summary processing has no cloud fallback. Review the AI draft against its source quotes. Recording channels do not identify individual speakers; real long-meeting acceptance remains incomplete.
+Beta 26 adds locally recorded meeting notes, local transcription and optional Ukrainian summaries with separately downloaded Gemma, Qwen or Lapa models. Notes also offer explicitly selected Gemini cloud transcription and summaries, with editable model profiles under Models → Cloud models. The existing Gemini key is reused. Cloud transcription sends audio; cloud summaries send transcript text. Local processing has no automatic cloud fallback. Review the AI draft against its source quotes. Recording channels do not identify individual speakers; real long-meeting acceptance remains incomplete.
 
 Cloud features are intended for **adult professional/business users** and require the user's own eligible Gemini API project. Google restricts supported regions and requires Paid Services for API clients made available to users in the EEA, Switzerland and the UK. Personal API keys do not waive Google's terms. API usage can incur charges billed by Google to the user's project; Pysano supplies no shared API key or quota.
+
+Use **Notes → ⋯ → Move to Trash** to remove a recording after confirmation. Its audio, transcript and summary move together to the macOS Trash and can be restored; exported copies elsewhere are kept. Recording and processing must finish first.
 
 Read [Privacy](PRIVACY.md), [Terms](TERMS.md), [Model licenses](MODEL_LICENSES.md), [Third-party notices](THIRD_PARTY_NOTICES.md) and [Known issues](KNOWN_ISSUES.md) before use. Pysano is not affiliated with or endorsed by Apple, Google, NVIDIA, Argmax or Fluid Inference.
 

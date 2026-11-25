@@ -10,11 +10,11 @@ Experimental releases, including Beta 26, use the established local signing cert
 
 Stable release: locally signed, not notarized by Apple.
 
-Stable 0.8.0 uses the established local Pysano certificate and Sparkle EdDSA key, with explicit owner approval. Stable is the update channel; it is not an Apple endorsement. A fresh Mac may block installation through Gatekeeper. No system security settings or Keychain access policies are weakened.
+Stable 0.8.1 uses the established local Pysano certificate and Sparkle EdDSA key, with explicit owner approval. Stable is the update channel; it is not an Apple endorsement. A fresh Mac may block installation through Gatekeeper. No system security settings or Keychain access policies are weakened.
 
-Beta releases are experimental. Beta 26 includes the privacy/eligibility acknowledgement and bundled notices; existing versions through Beta 23 do not enforce that acknowledgement. Users remain responsible for Google eligibility and data-use rules. In Pysano, enable **Updates → Receive beta releases** to receive betas. Stable users do not receive beta updates by default. Latest does not necessarily mean Stable; check the prerelease label. The current Stable version is 0.8.0; verify its presence in Releases and the signed feed.
+Beta releases are experimental. Beta 26 includes the privacy/eligibility acknowledgement and bundled notices; existing versions through Beta 23 do not enforce that acknowledgement. Users remain responsible for Google eligibility and data-use rules. In Pysano, enable **Updates → Receive beta releases** to receive betas. Stable users do not receive beta updates by default. Latest does not necessarily mean Stable; check the prerelease label. The current Stable version is 0.8.1; verify its presence in Releases and the signed feed.
 
-Security notice, 13 November 2026: legacy Stable 0.7.1 bundles Sparkle 2.9.2, which is covered by later upstream security advisories. Stable 0.8.0 bundles Sparkle 2.10.1 and Beta 38 bundles 2.10.0 with those fixes. Prefer 0.8.0 rather than a fresh installation of 0.7.1; the existing legacy archive remains unchanged for provenance. See [Known issues](KNOWN_ISSUES.md).
+Security notice, 13 November 2026: legacy Stable 0.7.1 bundles Sparkle 2.9.2, which is covered by later upstream security advisories. Stable 0.8.1 bundles Sparkle 2.10.1 and Beta 38 bundles 2.10.0 with those fixes. Update to 0.8.1 from 0.7.1; the existing legacy archive remains unchanged for provenance. See [Known issues](KNOWN_ISSUES.md).
 
 ## Local and cloud operation
 

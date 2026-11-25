@@ -6,6 +6,27 @@
         <description>Stable and beta updates for Pysano.</description>
         <language>en</language>
         <item>
+            <title>0.8.1</title>
+            <pubDate>Wed, 25 Nov 2026 18:13:26 +0200</pubDate>
+            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
+            <sparkle:version>57</sparkle:version>
+            <sparkle:shortVersionString>0.8.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# Pysano 0.8.1
+
+- Starts preparing the selected local speech model as soon as dictation begins by default. Turn this off in Dictation settings. A brief accidental keypress clears the recording indicator without waiting for the model.
+- Adds optional Apple Translation for selected text and text captured on screen on macOS 26.4 or later, using language packs on the Mac.
+- Adds a visible drag handle to translation and command results. Keep a result open while dictating into another app.
+- Updates FluidAudio to 0.18.4, including punctuation handling improvements for long Parakeet recordings.
+
+Stable release: locally signed, not notarized by Apple.
+
+This release uses the existing Pysano certificate and Sparkle update key. On a Mac where Pysano has never been installed, Gatekeeper may block the first launch.
+]]></description>
+            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.8.1/Pysano-0.8.1.zip" length="22893217" type="application/octet-stream" sparkle:edSignature="5MjX2v4obdTZlldqo4BsmbRita9X038wm2dGOApaZgzjw5YYpySFdVILogyoyM5HDWcIJiom4SLiGDIOjZSUAQ=="/>
+        </item>
+        <item>
             <title>0.8.0</title>
             <pubDate>Sat, 14 Nov 2026 16:55:25 +0200</pubDate>
             <link>https://github.com/kairon27/Pysano-Updates/releases</link>
@@ -70,23 +91,6 @@ Experimental beta: not notarized by Apple.
 - Liquid is the new default short cue. Every option can be previewed in Settings without starting a recording, and sound feedback can still be disabled completely.
 ]]></description>
             <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.7.1/Pysano-0.7.1.zip" length="11984588" type="application/octet-stream" sparkle:edSignature="Va5xF1eJSx87ac1uuS+Tu1TL+fJmpYfv4ZBSKsc9BBRtQ7u/7yVnPvwlcxqiAAYn2ni9GCh7TcPD9fqGuTmzAQ=="/>
-        </item>
-        <item>
-            <title>0.7.0</title>
-            <pubDate>Sat, 29 Aug 2026 11:18:46 +0300</pubDate>
-            <link>https://github.com/kairon27/Pysano-Updates/releases</link>
-            <sparkle:version>12</sparkle:version>
-            <sparkle:shortVersionString>0.7.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# Pysano 0.7.0
-
-- Made the dictation indicator smaller and moved its default position to the top so it does not cover the input field.
-- Added top, bottom, left, and right indicator placement options.
-- The completion message can be hidden or displayed for 0.5, 1, 2, or 4 seconds; the default is 1 second.
-- Added native macOS sounds at recording start and completion, with a separate sound toggle.
-]]></description>
-            <enclosure url="https://github.com/kairon27/Pysano-Updates/releases/download/v0.7.0/Pysano-0.7.0.zip" length="11971563" type="application/octet-stream" sparkle:edSignature="0/wmKCqcYxT5mtMYgUMfWkek19FWaGMSBRTkhpuwSIf/uWoJNCEP9V1OGIPgmky4G8u1gi5EschWBfYYhXQXBg=="/>
         </item>
     </channel>
 </rss>
